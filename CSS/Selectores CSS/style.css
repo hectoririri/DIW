@@ -1,0 +1,79 @@
+/* PRIMER EJERCICIO */
+/* Todos los elementos de la pagina */
+* {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Todos los parrafos de la pagina */
+p {
+    color: #555;
+}
+
+/* Todos los párrafos contenidos en #primero */
+    #primero p {
+    color: #369;
+}
+
+a /* Todos los enlaces la pagina */
+{
+    color: #c30;
+}
+#primero em/* Los elementos <em> contenidos en #primero */
+{
+    color: #0000bb;
+    background-color: #ffffcc;
+}
+
+/* Todos los elementos <em> con la clase "especial" en toda la pagina */
+em.especial{
+    color: #ffff00;
+    background: #000000;
+}
+/* Todos los elementos <span> contenidos en la clase "normal" */
+.normal span{
+    font-weight: bold;
+}
+
+/* SEGUNDO EJERCICIO */
+/* En su estado normal, un enlace se muestra de color y sin subrayado (propiedad text-decoration). */
+div#segundo_ejercicio a:link{
+    color: blue;
+    text-decoration: none;
+}
+/* Cuando el usuario sitúa el cursor del ratón sobre un enlace, se invierten los colores y se muestra el subrayado. */
+div#segundo_ejercicio a:hover{
+    color: red;
+    text-decoration: underline;
+}
+/* Cuando un enlace está activo, se muestra de otro color y sin subrayado. */
+div#segundo_ejercicio a:active{
+    color: black;
+    text-decoration: none;
+}
+/* Cuando un enlace ha sido visitado, se muestra de otro color y sin subrayado. */
+div#segundo_ejercicio a:visited{
+    color: greenyellow;
+    text-decoration: none;
+}
+/* Cuando un enlace tiene el foco del teclado, se muestra de otro color y subrayado. */
+div#segundo_ejercicio a:focus{
+    color: pink;
+    text-decoration: underline;
+}
+
+/* TERCER EJERCICIO */
+table, table tr td{
+    border: 1px solid black;
+}
+table tr:nth-child(1){color: red;}
+table tr:nth-child(2){color: teal;}
+table tr:nth-child(3){color: blue;}
+table tr:nth-child(4){color: orange;}
+table tr:nth-child(5){color: purple;}
+table tr:nth-child(6){color: olive;}
+table tr:nth-child(7){color: fuchsia;}
+table tr:nth-child(8){color: green;}
+table tr td:nth-child(2){ background-color: red;}
+table tr td:nth-child(3){ background-color: green;}
+table tr td:nth-child(4){ background-color: blue;}

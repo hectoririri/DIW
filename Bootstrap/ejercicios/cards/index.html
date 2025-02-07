@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-2">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu bg-dark fg-white" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item text-light" href="#">Acción 1</a></li>
+                  <li><a class="dropdown-item text-light" href="#">Acción 2</a></li>
+                  <li><hr class="dropdown-divider text-light"></li>
+                  <li><a class="dropdown-item text-light" href="#">Algo a parte divido</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Data</li>
+          </ol>
+        </nav>
+      </div>
+      
+      <header>
+        <div class="row">
+          <div class="col-12 border text-center p-3 bg-primary text-white">Header</div>
+        </div>
+      </header>
+      
+      <main>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12 border p-3">
+            <div class="card">
+              <div class="card-body fs-4">
+                <h5 class="card-title">Tarjeta 1</h5>
+                <p class="card-text">Contenido de la primera tarjeta.</p>
+                <button class="btn btn-primary">Ver más</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 border p-3">
+            <div class="card">
+              <div class="card-body fs-4">
+                <h5 class="card-title">Tarjeta 2</h5>
+                <p class="card-text">Contenido de la segunda tarjeta.</p>
+                <button class="btn btn-success">Ver más</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-12 border p-3">
+            <div class="alert alert-warning" role="alert">
+              ¡Atención! Esto es un mensaje de alerta.
+            </div>
+          </div>
+        </div>
+      </main>
+      
+      <footer>
+        <div class="row">
+          <div class="col-lg-6 col-12 text-center border bg-dark text-white p-3">Footer 1</div>
+          <div class="col-lg-6 col-12 text-center border bg-secondary text-white p-3">Footer 2</div>
+        </div>
+      </footer>
+    </div>
+    
+    <script src="./js/bootstrap.bundle.js"></script>
+  </body>
+</html>

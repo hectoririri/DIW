@@ -1,0 +1,82 @@
+div>p{color: #FCEFBD;}
+
+div#primera{
+    text-align: center;
+    background-color: #660066;
+    width: 20vw;
+    padding: 3px;
+}
+
+div#segunda{
+    position: absolute;
+    top: 12%;
+    left: 20%;
+    background-color: #006666;
+    text-align: right;
+    padding: 5px;
+    width: 20vw;
+    z-index: 2;
+}
+
+div#tercera{
+    position: relative;
+    left: 2%;
+    top: 10px; /* No funciona con % */
+    background-color: #003333;
+    text-align: left;
+    padding: 5px;
+    width: 18vw;
+    z-index: 1;
+}
+
+div#cuarta{
+    background-color: #009966;
+    text-align: left;
+    padding: 1px;
+    width: 18vw;
+}
+
+div#quinta{
+    position: absolute;
+    left: 30vw;
+    background-color: #666666;
+    text-align: right;
+    padding: 5px;
+    padding-bottom: 15px;
+    width: 50vw;
+}
+
+div#sexta{
+    position: relative;
+    background-color: #111111;
+    text-align: right;
+    padding: 10px;
+    width: 18vw;
+}
+
+div#septima{
+    background-color: #00AAAA;
+    height: 5vh;
+    text-align: right;
+    padding: 10px;
+    width: 20vw;
+    overflow: scroll;
+    position: absolute;
+    left: 75vw;
+    top: 5vh;
+}
+
+p#sticky{
+    font-weight: 900;
+    position: sticky;
+    top: 0;
+    background-color: #E1F4FC;
+    padding: 20px;
+}
+div#caja_sticky{
+    font-weight: 900;
+    position: sticky;
+    top: 10vh;
+    background-color: #E1F4FC;
+    padding: 20px;
+}

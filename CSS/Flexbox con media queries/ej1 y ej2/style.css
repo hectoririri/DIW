@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#contenedor,
+#contenedor div {
+    border: 1px solid red;
+}
+
+/* Ejercicio 1 */
+/* @media screen and (max-width: 800px) {
+    #contenedor {
+        width: 75%;
+    }
+
+    #secciones {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    #seccion1 {
+        width: 100%;
+    }
+
+    #seccion2,
+    #seccion3 {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #contenedor {
+        width: 50%;
+    }
+
+    #secciones {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    #seccion1,
+    #seccion2,
+    #seccion3 {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #contenedor,
+    #navbar,
+    #seccion1 {
+        width: 100%;
+    }
+
+    #contenedor-secciones {
+        display: flex;
+        justify-content: center;
+    }
+
+    #secciones {
+        display: flex;
+        width: 70%;
+        flex-wrap: wrap;
+    }
+
+    #seccion2 {
+        float: left;
+        width: 50%;
+    }
+
+    #seccion3 {
+        width: 50%;
+    }
+} */
+
+/* Ejercicio 2 */
+/* @media screen and (max-width: 800px) {
+    #contenedor {
+        width: 75%;
+    }
+
+    #secciones {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    #seccion3 {
+        width: 100%;
+    }
+
+    #seccion1,
+    #seccion2 {
+        width: 50%;
+    }
+
+    #seccion1 {
+        order: 2;
+    }
+
+    #seccion2 {
+        order: 1;
+    }
+
+    #seccion3 {
+        order: 3;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #contenedor {
+        width: 50%;
+    }
+
+    #secciones {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    #seccion1,
+    #seccion2,
+    #seccion3 {
+        width: 100%;
+    }
+    #seccion1 {
+        order: 1;
+    }
+
+    #seccion2 {
+        order: 2;
+    }
+
+    #seccion3 {
+        order: 3;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #contenedor,
+    #navbar {
+        width: 100%;
+    }
+
+    #contenedor-secciones {
+        display: flex;
+        justify-content: center;
+    }
+
+    #secciones {
+        display: flex;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+
+    #seccion1,
+    #seccion2,
+    #seccion3 {
+        width: 34%;
+    }
+
+    #seccion1 {
+        flex-shrink: 3;
+        order: 2;
+        width: 60%;
+    }
+
+    #seccion3 {
+        flex-shrink: 5;
+        order: 3;
+    }
+
+    #seccion2 {
+        flex-shrink: 5;
+        order: 1;
+    }
+} */

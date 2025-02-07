@@ -1,0 +1,227 @@
+* {
+    border: 10px orange;
+}
+
+#contenedor {
+    background-color: rgb(184, 180, 180);
+}
+
+.elemento {
+    color: aliceblue;
+    font-weight: 900;
+    font-size: 1em;
+    text-align: center;
+    align-content: center;
+    width: 23%;
+    padding: 10px;
+    background-color: blueviolet;
+}
+
+/* Ejemplo 1 */
+/* #contenedor {
+    display: flex;
+    justify-content: flex-start
+} */
+
+/* Ejemplo 2 */
+/* #contenedor {
+    display: flex;
+    flex-direction: row-reverse;
+} */
+
+/* Ejemplo 3 */
+/* #contenedor {
+    display: flex;
+    flex-direction: column;
+} */
+
+/* Ejemplo 4 */
+/* #contenedor {
+    display: flex;
+    flex-direction: column-reverse; 
+} */
+
+/* Ejemplo 5*/
+/* #contenedor {
+    display: flex;
+    flex-wrap: wrap;
+}  */
+
+/* Ejemplo 6*/
+/* #contenedor {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}  */
+
+/* Ejemplo 7*/
+/* #contenedor {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse; 
+}  */
+
+/* Ejemplo 8*/
+/* #contenedor {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+/* Ejemplo 9*/
+/* #contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+} */
+
+/* Ejemplo 10*/
+/* #contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+} */
+
+/* Ejemplo 11*/
+/* #contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} */
+
+/* Ejemplo 12*/
+/* #contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} */
+
+/* Ejemplo 14 */
+/* #contenedor {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: 250px;
+}
+.elemento{
+    align-content: flex-start;
+} */
+
+/* Ejemplo 15*/
+/* #contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 200px;
+} */
+
+/* Ejemplo 16*/
+/* #contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    height: 200px;
+} */
+
+/* Ejemplo 18*/
+/* #contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+.elemento:first-child{
+    font-size: 2em;
+}
+.elemento:nth-child(2){
+    font-size: 1.3em;
+}
+.elemento:nth-child(3){
+    font-size: 0.8em;
+}
+.elemento:nth-child(4){
+    font-size: 1.5em;
+}
+.elemento:nth-child(5){
+    font-size: 1em;
+}
+.elemento:nth-child(6){
+    font-size: 2.5em;
+}
+.elemento:nth-child(7){
+    font-size: 1.8em;
+} */
+
+/* Ejemplo 19*/
+ /* #contenedor {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: 250px;
+}
+.elemento{
+    align-content: flex-start;
+} */
+
+/* Ejemplo 22*/
+/* #contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 200px;
+} */
+
+/* Ejemplo 23*/
+/* #contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 200px;
+} */
+
+/* Ejemplo 24*/
+/* #contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 200px;
+} */
+
+/* Ejemplo 25*/
+/* #contenedor {
+    display: flex;
+    flex-wrap: flex-start;
+    height: 200px;
+}
+.elemento:first-child{
+    order: 1;
+}
+.elemento:nth-child(2){
+    order: 5;
+}
+.elemento:nth-child(3){
+    order: 2;
+}
+.elemento:nth-child(4){
+    order: 6;
+}
+.elemento:nth-child(5){
+    order: 3;
+}
+.elemento:nth-child(6){
+    order: 7;
+}
+.elemento:nth-child(7){
+    order: 4;
+} */
+
+/* Ejemplo 26*/
+#contenedor {
+    display: flex;
+    flex-wrap: flex-start;
+    align-items: stretch;
+    height: 200px;
+}
+.elemento:nth-child(4){
+    flex-shrink: 0;
+}

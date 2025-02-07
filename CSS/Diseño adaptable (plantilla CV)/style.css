@@ -1,0 +1,115 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* HEADER */
+header{
+    text-align: center;
+    align-content: center;
+}
+header img{
+    width: 75px;
+    height: 75px;
+}
+header, footer{
+    color: white;
+    background-color: #2e4c54;
+}
+header h1{margin-bottom: 0px;}
+header h3{margin-top: 0px;}
+
+/* MAIN */
+main section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+main section div{
+    width: 40%;
+}
+main section article p, main section article ul li{color: #4f616f}
+main section article ul{
+    padding-left: 13px;
+    list-style: square;
+}
+main section article p.encabezado{
+    display: inline-block;
+    font-weight: bolder;
+    /* text-decoration: underline;
+    text-decoration-color: #a4bdbe; */
+    padding-bottom: 3px;
+    border-bottom: 2.5px solid #89a1a3;
+    color: black;
+}
+
+main section article{
+    width: 50%;
+    align-content: center;
+
+    border-bottom-color: #d7d7d7;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    padding-bottom: 20px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+/* FOOTER */
+footer{
+    align-content: center;
+    padding-left: 2%;
+}
+footer span{
+    text-decoration: underline;
+}
+
+
+/* EJERCICIO 1 */
+main section article p{line-height: 2em;}
+
+/* EJERCICIO 2 */
+main section article:nth-child(odd){background-color: lightcoral;}
+main section article:nth-child(even){background-color: lightseagreen;}
+
+/* EJERCICIO 3 */
+footer a#a1:link{
+    color: rgb(93, 93, 219);
+    text-decoration: none;
+}
+footer a#a1:hover{
+    color: rgb(206, 87, 87);
+    text-decoration: overline;
+}
+footer a#a1:visited{
+    color: greenyellow;
+    text-decoration: none;
+}
+
+footer a#a2:link{
+    color: rgb(198, 219, 93);
+    text-decoration: none;
+}
+footer a#a2:hover{
+    color: rgb(87, 206, 182);
+    text-decoration: dashed;
+    font-size: 2em;
+}
+footer a#a2:visited{
+    color: rgb(224, 88, 213);
+    text-decoration: none;
+}
+footer a#a2:focus{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.5em;
+}

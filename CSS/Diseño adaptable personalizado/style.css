@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Barra nav horizontal */
+nav {
+    text-align: center;
+    background-color: rgb(156, 128, 128);
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+nav ul#lista_horizontal {
+    display: inline-flex;
+}
+
+nav ul#lista_horizontal li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+    padding: 30px;
+}
+
+nav ul#lista_horizontal li a:hover {
+    color: #D0C0B0;
+    font-size: 1.3em;
+    text-decoration: underline;
+}
+
+/* Centro */
+div#centro {
+    width: 100vw;
+    height: 80vh;
+    background: #e0e0e0;
+}
+
+/* Izquierda */
+div#izquierda {
+    float: left;
+    width: 20%;
+    height: 100%;
+    background-color: #e0d3c1;
+}
+
+div#izquierda table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+div#izquierda table th {
+    padding: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(228, 215, 145);
+}
+
+div#izquierda table tr,
+div#izquierda table td {
+    border: 1px solid rgb(54, 54, 54);
+    padding: 15px;
+    background-color: darkgray;
+}
+
+div#izquierda table td:hover {
+    background-color: rgb(226, 68, 68);
+    font-size: 1.2em;
+}
+div#izquierda table th:hover {
+    background-color: rgb(68, 163, 226);
+    font-size: 1.4em;
+}
+
+/* Derecha */
+div#derecha {
+    width: 80%;
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.1em;
+    text-wrap: balance;
+}
+
+div#derecha h3 {
+    color: #64B605;
+}
+
+div#derecha p>span {
+    text-transform: uppercase;
+    font-weight: 800;
+    background-color: rgb(155, 181, 204);
+}
+
+div#pseudo_clases {
+    display: block;
+}
+
+div#pseudo_clases p {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+div#pseudo_clases p:nth-child(2), div#pseudo_clases p:nth-child(7) {
+    font-weight: 900;
+}
+
+div#pseudo_clases p:nth-child(odd) {
+    color: rgb(247, 149, 165);
+    text-decoration: underline;
+}
+
+div#pseudo_clases p:nth-child(even) {
+    color: rgb(85, 75, 29);
+    text-transform: uppercase;
+}
+
+div.card {
+    float: left;
+    border-radius: 10%;
+    padding: 30px;
+    width: 40%;
+    background-color: aliceblue;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px;
+}
+div#derecha iframe{clear: both;}
+
+/* Pie */
+div#pie {
+    height: 20vh;
+    background-image: url('./fondo_hierba.png');
+    background-position: center;
+    background-attachment: fixed;
+}
+
+div#caja_posicionamiento {
+    background-color: #64B605;
+    height: 100px;
+    width: 250px;
+    overflow: auto;
+    position: relative;
+    left: 30%;
+    top: 10%;
+
+}

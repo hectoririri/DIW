@@ -1,0 +1,9 @@
+/* Ocultamos los elementos a la hora de imprimir */
+@media print{
+    header, footer, nav, aside{
+        display: none;
+    }
+}
+
+/* Modificamos el font a la hora de imprimir */
+@media print  { body { font-size: 11pt; } }

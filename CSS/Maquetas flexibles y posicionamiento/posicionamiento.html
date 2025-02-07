@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>posicionamiento</title>
+    <link rel="stylesheet" href="posicionamiento.css">
+</head>
+<body>
+    <div class="no_posicion">
+        <h1>NO define posición</h1>
+    </div>
+    <div id="primera">
+        <p>PRIMERA. No define posición, por lo que es STATIC</p>
+    </div>
+    <div id="segunda">
+        <p>SEGUNDA: Capa Absoluta (sólo tiene como contenedor a "body") por lo tanto es relativa a body</p>
+    </div>
+    <div id="tercera">
+        <p>TERCERA: Capa de posicionamiento relativo. Se coloca teniendo en cuenta las propiedades a partir de la posición que le tocaría en el flujo HTML. No afecta al resto de capas adyacentes</p>
+    </div>
+    <div id="cuarta">
+        <p>CUARTA. Se ignoran los valores de desplazamiento</p>
+    </div>
+    <div id="quinta">
+        <p>QUINTA. Capa absoluta, se referencia según a su contenedor porque no es un static</p>
+        <div id="sexta">
+            <p>SEXTA. Dentro de quinta. Absoluta, se referencia dentro de su contenedor porque éste no es un static</p>
+        </div>
+    </div>
+    <div id="septima">
+        <p>SÉPTIMA. Esta capa no se mueve al desplazar la ventana. SÉPTIMA. Esta capa no se mueve al desplazar la ventana.</p>
+    </div>
+    <h2>pruebo en alguno de los div la propiedad overflow</h2>
+    <div class="no_posicion">
+        <h1>NO define posición</h1>
+    </div>
+    <div class="no_posicion">
+        <h1>NO define posición</h1>
+    </div>
+    <p id="sticky">PARRAFO STICKY</p>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <div id="caja_sticky"> CAJA STICKY</div>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+    <h3>Texto</h3>
+</body>
+</html>

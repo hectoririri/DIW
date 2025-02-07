@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+#cab{
+    clear: both;
+    background-color: red;
+    width: 100vw;
+    height: 15vh;
+}
+#centro{
+    width: 100vw;
+    height: 70vh;
+}
+#lat_izq{
+    background-color: yellow;
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+#principal{
+    background-color: grey;
+    float: left;
+    width: 60%;
+    height: 100%;
+}
+#lat_der{
+    background-color: lightgreen;
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+#pie{
+    clear: both;
+    width: 100vw;
+    height: 15vh;
+    background-color: lightblue ;
+}

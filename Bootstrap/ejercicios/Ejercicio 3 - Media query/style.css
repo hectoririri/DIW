@@ -1,0 +1,44 @@
+main div{
+    font-size: 1.5em;
+    font-weight: 800;
+    background-color: #FF0000;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    header div{
+        background-color: #FFC0CB;
+    }
+    main div:nth-child(2){
+        background-color: #00FFFF;
+    }
+    footer div{
+        background-color: #FFFF00;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    header div{
+        background-color: #00FFFF;
+    }
+    main div:nth-child(2){
+        background-color: #FF0000;
+    }
+    main div:last-child{
+        background-color: #008000;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    header div{
+        background-color: #008000;
+    }
+    main div.row div{
+        height: 150px;
+    }
+    main div:last-child{
+        background-color: #FF0000;
+    }
+}

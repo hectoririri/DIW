@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    overflow: hidden;
+}
+
+div>img{width: 200px;}
+div>p{text-align: left;}
+
+div.box{
+    display: inline-block;
+    box-sizing: border-box; /* Evita el calculo del padding  con el ancho pero no de los márgenes */
+    padding: 1em;
+    margin: 0.3%;
+    vertical-align: text-top;
+    text-align: center;
+    width: 32%;
+    border: 1px black solid;
+}
+
+div#boxfinal{
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 1em;
+    margin: 0.3%;
+    width: 100%;
+    border: 1px black solid;
+}

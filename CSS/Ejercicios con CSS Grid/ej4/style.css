@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#contenedor{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+    "celda1 celda1 celda1"
+    "celda2 celda3 celda4"
+    "celda2 celda5 celda6";
+    column-gap: 3px;
+    row-gap: 3px;
+}
+
+ .rejilla{
+    text-align: center;
+    padding: 30px;
+    background-color: #6A7C88;
+    color: white;
+}
+
+.rejilla:nth-child(1){
+    grid-area: celda1;
+}
+
+.rejilla:nth-child(2){
+    grid-area: celda2;
+}
+
+.rejilla:nth-child(3){
+    grid-area: celda3;
+}
+
+.rejilla:nth-child(4){
+    grid-area: celda4;
+}
+
+.rejilla:nth-child(5){
+    grid-area: celda5;
+}
+
+.rejilla:nth-child(6){
+    grid-area: celda6;
+}

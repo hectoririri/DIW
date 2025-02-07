@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#contenedor,
+#contenedor>div {border: 1px solid red;}
+#secciones{border: 1px solid red;}
+#seccion1 {background-color: #FFB366;}
+#seccion2 {background-color: #E67300;}
+#seccion3 {background-color: #FFD9B3;}
+
+/* Ejercicio 3 */
+@media screen and (max-width: 800px) {
+    #contenedor,
+    #navbar,
+    #seccion2, 
+    #seccion3{
+        width: 100%;
+    }
+
+    #contenedor-secciones {
+        display: flex;
+        justify-content: center;
+    }
+
+    #secciones {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    #seccion2y3{
+        width: 70%;
+        border: 1px solid red;
+    }
+    #seccion1 {
+        width: 30%;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #contenedor,
+    #navbar,
+    #seccion1,
+    #seccion2,
+    #seccion3,
+    #seccion2y3{
+        width: 100%;
+    }
+
+    #seccion1 {
+        height: 2vh;
+    }
+    #contenedor-secciones {
+        display: flex;
+        justify-content: center;
+    }
+
+    #secciones {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    #contenedor,
+    #navbar,
+    #seccion2, 
+    #seccion3{
+        width: 100%;
+    }
+
+    #contenedor-secciones {
+        display: flex;
+        justify-content: center;
+    }
+
+    #secciones {
+        display: flex;
+        width: 70%;
+        flex-wrap: wrap;
+    }
+
+    #seccion2y3{
+        width: 70%;
+        border: 2px blue solid;
+    }
+    #seccion1 {
+        width: 30%;
+        height: 100vh;
+    }
+}

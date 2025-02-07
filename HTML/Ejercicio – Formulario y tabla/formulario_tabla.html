@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML5</title>
+    <style>
+        table, tr, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario HTML5</h1>
+    <!-- Marcador de formulario -->
+    <a id="form"></a>
+    <form method="GET" action="">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required autofocus>
+        <br><br>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" required>
+        <br><br>
+
+        <label for="url">Página web personal:</label>
+        <input type="url" id="url" name="url" placeholder="URL de tu página web personal">
+        <br><br>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha">
+        <br><br>
+
+        <label for="tiempo">Hora:</label>
+        <input type="time" id="tiempo">
+        <br><br>
+
+        <label for="fechaHora">Fecha y hora:</label>
+        <input type="datetime" id="fechaHora">
+        <br><br>
+
+        <label for="mes">Mes:</label>
+        <input type="month" id="mes">
+        <br><br>
+
+        <label for="semana">Semana:</label>
+        <input type="week" id="semana">
+        <br><br>
+
+        <label for="numero">Número (min -10, max 10):</label>
+        <input type="number" id="numero"  max="10" min="-10">
+        <br><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono">
+        <br><br>
+
+        <label for="busqueda">Término de búsqueda:</label>
+        <input type="search" id="busqueda">
+        <br><br>
+
+        <label for="color">Color favorito:</label>
+        <input type="color" id="color">
+        <br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <!-- Marcador de tabla -->
+    <a id="tabla"></a>
+    <table>
+        <thead>
+            <!-- Encabezado -->
+            <tr>
+                <th>Categoría</th>
+                <th>Etiquetas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Cuerpo -->
+            <!-- Fila formulario sin espacios con rowspan -->
+            <tr> <td rowspan="6">Formulario</td> </tr>
+
+            <!-- 5 filas de etiquetas de formulario -->
+            <tr> <td>form</td> </tr>
+            <tr> <td>button</td> </tr>
+            <tr> <td>input</td> </tr>
+            <tr> <td>select</td> </tr>
+            <tr> <td>textarea</td> </tr>
+
+            <!-- Fila tabla sin espacios con rowspan -->
+            <tr> <td rowspan="6">Tabla</td> </tr>
+
+            <!-- 5 filas de etiquetas de tabla -->
+            <tr> <td>table</td> </tr>
+            <tr> <td>tr</td> </tr>
+            <tr> <td>th</td> </tr>
+            <tr> <td>td</td> </tr>
+            <tr> <td>caption</td> </tr>
+
+            <!-- Fila texto sin espacios con rowspan -->
+            <tr> <td rowspan="7">Texto</td> </tr>
+
+            <!-- 6 filas de etiquetas de texto -->
+            <tr> <td>b</td> </tr>
+            <tr> <td>em</td> </tr>
+            <tr> <td>i</td> </tr>
+            <tr> <td>strong</td> </tr>
+            <tr> <td>sub</td> </tr>
+            <tr> <td>sup</td> </tr>
+        </tbody>
+    </table>
+</body>
+</html>
