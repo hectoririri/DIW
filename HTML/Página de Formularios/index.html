@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motor de busqueda HNG</title>
+</head>
+<body>
+    <!-- Dos motores de búsqueda -->
+     <!-- Enlace para ver parámetros de búsqueda https://serpapi.com/search-api -->
+    <h1>Motor de busqueda google:</h1>
+    <search>
+        <form action="https://www.google.com/search">
+            <input type="search" name="q" placeholder="Buscar con Google">
+            <input type="submit" value="Buscar">
+            <input type="checkbox" name="tbm" value="isch"> Buscar en imágenes
+        </form>
+    </search>
+    <h1>Motor de busqueda bing:</h1>
+    <search>
+        <form action="https://www.bing.com/search">
+            <input type="search" name="q" placeholder="Buscar con Bing">
+            <input type="submit" value="Buscar">
+            <input type="checkbox" name="ickkck" value=""> Buscar en imágenes
+        </form>
+    </search>
+    
+    <br><br><br>
+
+    <!-- Formulario de pago -->
+     <form onsubmit="alert('Form data is OK!'); return false;">
+        <fieldset>
+            <p><b> FORMULARIO DE PAGO </b> (Los campos obligatorios se han marcado con *)</p>
+            <fieldset>
+                <legend><b> Información de contacto </b></legend>
+
+                <!-- Parte de profesión -->
+
+                <fieldset>
+                    <legend> Profesión </legend>
+                    <label><input type="radio" name="profesion" value="profesor/a" required>Profesor/a</label>
+                    <label><input type="radio" name="profesion" value="estudiante" required>Estudiante</label>
+                    <label><input type="radio" name="profesion" value="otro" required>Otro</label>
+                </fieldset>
+
+                <!-- Parte de donde se realiza el formulario radiobutton -->
+
+                <fieldset>
+                    <legend>Dispositivo donde realiza el formulario</legend>
+                    <label><input type="radio" name="tratamiento" value="tablet" required>Tablet</label>
+                    <label><input type="radio" name="tratamiento" value="movil" required>Movil</label>
+                    <label><input type="radio" name="tratamiento" value="pc" required>Pc</label>
+                    <label><input type="radio" name="tratamiento" value="otro" required>Otro</label>
+                </fieldset>
+
+                <!-- Parte de datos personales -->
+
+                <br>
+                <label for="nombre">
+                    Nombre: *
+                    <input type="text" id="nombre" required>
+                </label>
+                <br>
+                <label for="apellidos">
+                    Apellidos: *
+                    <input type="text" id="apellidos" required>
+                </label>
+                <br>
+                <label for="correo">
+                    Correo: *
+                    <input type="email" id="correo" required>
+                </label>
+                <br>
+                <label for="telefono">
+                    Número de teléfono: *
+                    <input type="tel" id="telefono" required>
+                </label>
+                <br>
+                <label for="contrasena">
+                    Contraseña: *
+                    <input type="password" id="contrasena" required>
+                </label>
+            </fieldset>
+
+            <!-- Parte de información de pago -->
+
+            <fieldset>
+                <legend><b> Información de pago </b></legend>
+
+                <label for="tipo_tarjeta">
+                    Tipo de tarjeta
+                    <select name="tipo_tarjeta" id="tipo_tarjeta">
+                        <option value="" disabled>Seleccione una opción</option>
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">Mastercard</option>
+                        <option value="hormiguero">Tarjeta Hormiguero</option>
+                        <option value="casino">Monedas del casino</option>
+                    </select>
+                </label>
+                <br>
+                <label for="numero_tarjeta">
+                    Número de tarjeta: *
+                    <input type="number" id="numero_tarjeta">
+                </label>
+                <br>
+                <label for="fecha_caducidad">
+                    Fecha de caducidad: *
+                    <input type="date" id="fecha_caducidad" required>
+                </label>
+                <br>
+                <label for="cuenta_paypal">
+                    Cuenta de paypal: *
+                    <input type="text" id="cuenta_paypal" required>
+                </label>
+            </fieldset>
+        </fieldset>
+        <p><button type="submit">Validar el pago</button></p>
+     </form>
+     <br><br><br>
+
+     <!-- Formulario de Google Imágenes con filtrado -->
+    <fieldset>
+        <legend>Busqueda de imagen en Google</legend>
+        <search>
+            <form action="https://www.google.com/search">
+                <input type="search" name="q" placeholder="Buscar imagenes">
+                <input hidden type="checkbox" name="tbm" value="isch" checked>
+                <br>
+
+                <!-- Filtro Tamaño -->
+                <fieldset>
+                    <legend>Tamaño</legend>
+                    <select name="tamaño" id="tamaño">
+                        <option value="cualquier_tamaño">Cualquier tamaño</option>
+                        <option value="grande">Grande</option>
+                        <option value="mediano">Mediano</option>
+                        <option value="icono">Icono</option>
+                    </select>
+                </fieldset>
+                <br>
+
+                <!-- Filtro color -->
+                <fieldset>
+                    <legend>Color</legend>
+                    <select name="color" id="color">
+                        <option value="cualquier_color">Cualquier color</option>
+                        <option value="blanco_y_negro">Blanco y negro</option>
+                        <option value="transparente">Transparente</option>
+                    </select>
+                </fieldset>
+                <br>
+
+                <!-- Filtro tipo de imagen -->
+                 <fieldset>
+                    <legend>Tipo de imagen</legend>
+                    <select name="tipo_imagen" id="tipo_imagen">
+                        <option value="cualquier_tipo"> Cualquier tipo </option>
+                        <option value="imagen_prediseñada"> Imagen prediseñada </option>
+                        <option value="dibujo_lineal"> Dibujo lineal </option>
+                        <option value="gif"> GIF </option>
+                    </select>
+                 </fieldset>
+                <br>
+    
+                <!-- Filtro fecha imagen -->
+                 <fieldset>
+                    <legend>Fecha</legend>
+                    <select name="fecha_imagen" id="fecha_imagen">
+                        <option value="cualquier_fecha"> Cualquier fecha </option>
+                        <option value="ultimas_24_horas"> Últimas 24 horas </option>
+                        <option value="ultima_semana"> Última semana </option>
+                        <option value="ultimo_mes"> Último mes </option>
+                        <option value="ultimo_año"> Último año </option>
+                        <option value="intervalo_personalizado"> Intervalo personalizado... </option>
+                    </select>
+                 </fieldset>
+                <br>
+
+                <!-- Filtro licencia imagen -->
+                <fieldset>
+                    <legend>Licencia</legend>
+                    <select name="licencia_imagen" id="licencia_imagen">
+                        <option value="sin_filtrar"> Sin filtrar por licencia </option>
+                        <option value="licencia_creative_commons"> Licencias Creative Commons </option>
+                        <option value="licencia_comercial_y_otras"> Licencias comerciales y otras licencias </option>
+                    </select>
+                </fieldset>
+                <br>
+                
+                <button type="submit">Buscar</button>
+                <button type="reset">Reset</button>
+            </form>
+        </search>
+    </fieldset>
+</body>
+</html>
