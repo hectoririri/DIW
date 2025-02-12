@@ -2,3 +2,24 @@
     border: 0;
     box-sizing: border-box;
 }
+body{
+    background: rgb(228,87,202);
+    background: linear-gradient(180deg, rgb(233, 127, 213) 4%, rgba(144,144,200,1) 83%, rgba(0,212,255,1) 100%);
+}
+footer a:hover{
+    color: #ff6347;
+    text-decoration: underline;
+    background-color: #000000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#glass_panoramico{
+    /* From https://css.glass */
+    background: rgba(228, 87, 202, 0.35);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(228, 87, 202, 0.61);
+}
+
