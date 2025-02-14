@@ -3,9 +3,29 @@
     box-sizing: border-box;
 }
 body{
-    background: rgb(228,87,202);
-    background: linear-gradient(180deg, rgb(233, 127, 213) 4%, rgba(144,144,200,1) 83%, rgba(0,212,255,1) 100%);
+    background: rgb(61, 61, 61);
+    /* background: linear-gradient(180deg, rgba(236, 70, 58, 0.705) 4%, rgba(144,144,200,1) 83%, rgba(0,212,255,1) 100%); */
 }
+.container-navbar{
+    position: relative;
+}
+nav a:hover{
+    color: #ff6347;
+    text-decoration: underline;
+    background-color: #000000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#navbar {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+#navbar.bg-white {
+    background-color: white !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
 footer a:hover{
     color: #ff6347;
     text-decoration: underline;
@@ -23,3 +43,10 @@ footer a:hover{
     border: 1px solid rgba(228, 87, 202, 0.61);
 }
 
+/* Animación y personalización cards */
+.custom-card {
+    transition: transform 0.3s ease-in-out;
+}
+.custom-card:hover {
+    transform: scale(1.10);
+}
