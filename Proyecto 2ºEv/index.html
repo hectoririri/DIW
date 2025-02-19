@@ -6,6 +6,7 @@
     <title>Proyecto HNG</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/colors.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
@@ -30,10 +31,10 @@
                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Música</a>
+                        <a class="nav-link" href="index.html#musica">Musica</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Proyectos</a>
+                        <a class="nav-link" href="index.html#proyectos">Proyectos</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -51,88 +52,102 @@
         </div>
     </nav>
       <div class="p-5" style="background-image: url('./resources/img/panoramica_hector.png'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 400px;">
-          <div class="row align-items-center" id="glass_panoramico">
-          <div class="p-2 text-center">
-            <h2>Introducción</h2>
-            <p>Texto de introducción a mi pagina web presentandome brevemente</p>
-            <p>Hola, soy Hector y tengo una gran pasión por la tecnología, la música y el voleibol. Desde pequeño, siempre me ha fascinado cómo la tecnología puede transformar nuestras vidas y mejorar el mundo en el que vivimos.</p>
-          </div>
-          </div>
-      </div>
-      <div class="px-5" style="background-color: #f8f9fa;">
-          <div class="row py-5 justify-content-center">
+        <div class="row py-5 justify-content-center" id="glass_panoramico">
           <!-- Carrousel -->
+          <a name="musica"></a>
           <div class="col-md-5 d-flex justify-content-center">
-          <div id="carouselExampleCaptions" class="carousel slide shadow-lg" style="width: 100%;">
+            <div id="carouselExampleCaptions" class="carousel slide h-100">
               <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
               </div>
-              <div class="carousel-inner rounded">
-                <div class="carousel-item">
-                  <img src="./resources/img/Eiden_VenAlParque.png" class="d-block w-100 img-fluid" alt="..." style="max-height: 400px; object-fit: cover;">
+                <div class="carousel-inner rounded h-100">
+                  <div class="carousel-item active h-100">
+                  <img src="./resources/img/Eiden_VenAlParque.png" class="d-block w-100 h-100" alt="..." style="object-fit: cover;">
                   <div class="carousel-caption">
                   <h5>Eiden</h5>
                   <p>2020 - 2021</p>
                   </div>
-                </div>
-                <div class="carousel-item active">
-                  <img src="./resources/img/Comborock.jpg" class="d-block w-100 img-fluid" alt="...">
+                  </div>
+                  <div class="carousel-item h-100">
+                  <img src="./resources/img/Comborock.jpg" class="d-block w-100 h-100" alt="Imagen de comborock" style="object-fit: cover;">
                   <div class="carousel-caption">
                     <h5>ComboRock</h5>
                     <p>2021 - 2022</p>
                   </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="./resources/img/PyS.jpg" class="d-block w-100 img-fluid" alt="Foto grupal con Puntos y Seguidos">
+                  </div>
+                  <div class="carousel-item h-100">
+                  <img src="./resources/img/PyS.jpg" class="d-block w-100 h-100" alt="Foto grupal con Puntos y Seguidos" style="object-fit: cover;">
                   <div class="carousel-caption">
                     <h5>Puntos y Seguidos</h5>
                     <p>2024 - ...</p>
                   </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="./resources/img/Granuja_Navidad.jpg" class="d-block w-100 img-fluid" alt="Foto grupal con El Granuja y sus Majaras.">
+                  </div>
+                  <div class="carousel-item h-100">
+                  <img src="./resources/img/Granuja_Navidad.jpg" class="d-block w-100 h-100" alt="Foto grupal con El Granuja y sus Majaras." style="object-fit: cover;">
                   <div class="carousel-caption">
                     <h5>Granuja y sus Majaras</h5>
                     <p>2024 - ...</p>
                   </div>
+                  </div>
                 </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-              </button>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
             </div>
           </div>
           <div class="col-md-5 d-flex justify-content-center">
-            <div class="card h-100 shadow-lg" style="background-color: #ffffff;">
-          <div class="card-body">
-            <h5 class="card-title text-center">Mi Música</h5>
-            <p class="card-text">A lo largo de mi trayectoria musical, he formado parte de varios proyectos y bandas, explorando diferentes géneros y estilos. En el carrusel de la izquierda puedes ver algunas imágenes de mis actuaciones y proyectos musicales más destacados.</p>
-            <p class="card-text">Me especializo principalmente en:</p>
-            <ul>
-              <li>Batería Acústica y Electrónica</li>
-              <li>Guitarra eléctrica</li>
-              <li>Actuaciones en vivo</li>
-              <li>Grabaciones de maquetas</li>
-            </ul>
-          </div>
-          <div class="card-footer bg-transparent text-center">
-            <a href="#" class="btn btn-primary shadow">Ver más</a>
-          </div>
+            <div class="card h-100 shadow-lg bg-secondary">
+              <div class="card-body">
+                <h5 class="card-title text-center">Mi musica</h5>
+                <p class="card-text">A lo largo de mi trayectoria musical, he formado parte de varios proyectos y bandas, explorando diferentes géneros y estilos. En el carrusel de la izquierda puedes ver algunas imágenes de mis actuaciones y proyectos musicales más destacados.</p>
+                <p class="card-text">Me especializo principalmente en:</p>
+                <ul>
+                  <li>Batería Acústica y Electrónica</li>
+                  <li>Guitarra eléctrica</li>
+                  <li>Actuaciones en vivo</li>
+                  <li>Grabaciones de maquetas</li>
+                </ul>
+              </div>
+              <div class="card-footer bg-transparent text-center">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalVideo">
+                  Ver más
+                </button>
+              </div>
             </div>
           </div>
+        </div>
+          <div class="modal fade" id="modalVideo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalVideoLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modal1Label">Concierto con Eiden</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-center">
+                    <video class="img-fluid w-100" controls autoplay>
+                      <source src="./resources/video/Eiden-VenAlParque-Corto.mp4" type="video/mp4">
+                      <p>Tu navegador no admite la etiqueta de video</p>
+                    </video>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
           </div>
       </div>
       <div class="p-5">
           <div class="row mb-4">
-              <h1 class="text-start pb-2">Proyectos</h1>
+              <h1 class="text-start pb-2"><a name="proyectos"></a>Proyectos</h1>
               <div class="col">
                   <div class="card">
                       <div class="card-body">
@@ -161,7 +176,7 @@
               </div>
               <!-- Modal 1-->
               <div class="modal fade" id="modal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-dialog modal-dialog-centered modal-md">
                   <div class="modal-content">
                   <!-- Agenda contactos -->
                     <div class="modal-header">
@@ -179,12 +194,12 @@
                         <p>Proyecto donde se emula el videojuego del buscaminas</p>
                         <!-- Carrousel buscaminas -->
                         <div id="buscaminasCarousel" class="carousel slide" data-bs-ride="carousel">
-                          <div class="carousel-inner">
+                          <div class="carousel-inner h-100">
                             <div class="carousel-item active">
-                              <img src="resources/img/buscaminas_menu.png" class="d-block w-100" alt="Programa de buscaminas">
+                              <img src="resources/img/buscaminas_menu.png" class="d-block w-100 h-100" alt="Programa de buscaminas">
                             </div>
                             <div class="carousel-item">
-                              <img src="resources/img/buscaminas_juego.png" class="d-block w-100" alt="Programa de buscaminas">
+                              <img src="resources/img/buscaminas_juego.png" class="d-block w-100 h-100" alt="Programa de buscaminas">
                             </div>
                           </div>
                           <button class="carousel-control-prev" type="button" data-bs-target="#buscaminasCarousel" data-bs-slide="prev">

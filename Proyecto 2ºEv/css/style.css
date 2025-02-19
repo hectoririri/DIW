@@ -2,9 +2,18 @@
     border: 0;
     box-sizing: border-box;
 }
-body{
-    background: rgb(173, 170, 170);
-    /* background: linear-gradient(180deg, rgba(236, 70, 58, 0.705) 4%, rgba(144,144,200,1) 83%, rgba(0,212,255,1) 100%); */
+body {
+    background: #f0f2f5;
+    font-family: 'MiFuente', sans-serif; /* Usa tu fuente personalizada */
+    color: #333;
+    font-size: 1.3em;
+}
+/* styles.css */
+@font-face {
+    font-family: 'MiFuente'; 
+    src: url('../resources/fuentes/Neiko-Font/neikoregular-xgmp2.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal; 
 }
 .hero {
     background: url('../resources/img/fondos2.jpg') no-repeat center/cover;
@@ -12,8 +21,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #fff;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .container-navbar{
     position: relative;
@@ -24,11 +34,75 @@ background-color: rgba(0, 0, 0, 0.5);
 border-radius: 50%;
 padding: 20px;
 }
-nav a:hover{
-    color: #ff6347;
-    text-decoration: underline;
-    background-color: #000000;
-    transition: background-color 0.3s ease, color 0.3s ease;
+nav a {
+    position: relative;
+    color: #333;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: all 0.4s ease;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    color: #473d3d;
+    background-color: #888686;
+}
+
+.navbar-nav .nav-item {
+    position: relative;
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #888686;
+    font-weight: 600;
+    padding: 8px 15px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff;
+    background-color: #888686;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(156, 112, 108, 0.3);
+    border-radius: 4px;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #888686;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 80%;
+}
+
+.dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 8px 0;
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    color: #333;
+}
+
+.dropdown-item:hover {
+    background-color: #888686;
+    color: #fff;
+    transform: translateX(5px);
 }
 
 #navbar {
@@ -41,10 +115,10 @@ nav a:hover{
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-footer a:hover{
+footer a:hover {
     color: #ff6347;
     text-decoration: underline;
-    background-color: #000000;
+    background-color: #333;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -57,11 +131,16 @@ footer a:hover{
     -webkit-backdrop-filter: blur(5.5px);
     border: 1px solid rgba(228, 87, 202, 0.61);
 }
-
+.carousel-item img{
+    object-fit: cover;
+}
 /* Animación y personalización cards */
 .custom-card {
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
 .custom-card:hover {
     transform: scale(1.10);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
 }
