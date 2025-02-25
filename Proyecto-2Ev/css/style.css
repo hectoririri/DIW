@@ -16,7 +16,7 @@ body {
     font-style: normal; 
 }
 .hero {
-    background: url('../resources/img/fondos2.jpg') no-repeat center/cover;
+    background: url('../resources/img/fondos/fondo-principal.jpg') no-repeat center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -36,7 +36,7 @@ padding: 20px;
 }
 nav a {
     position: relative;
-    color: #333;
+    color: #E457CA;
     text-decoration: none;
     padding: 8px 15px;
     transition: all 0.4s ease;
@@ -44,8 +44,8 @@ nav a {
 }
 
 nav a:hover {
-    color: #473d3d;
-    background-color: #888686;
+    color: #fff;
+    background-color: rgba(228, 87, 202, 0.35);
 }
 
 .navbar-nav .nav-item {
@@ -56,7 +56,7 @@ nav a:hover {
 .navbar-nav .nav-link {
     position: relative;
     text-decoration: none;
-    color: #888686;
+    color: #E457CA;
     font-weight: 600;
     padding: 8px 15px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -64,9 +64,9 @@ nav a:hover {
 
 .navbar-nav .nav-link:hover {
     color: #fff;
-    background-color: #888686;
+    background-color: rgba(228, 87, 202, 0.35);
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(156, 112, 108, 0.3);
+    box-shadow: 0 4px 8px rgba(228, 87, 202, 0.3);
     border-radius: 4px;
 }
 
@@ -77,7 +77,7 @@ nav a:hover {
     left: 50%;
     width: 0;
     height: 2px;
-    background-color: #888686;
+    background-color: #E457CA;
     transition: all 0.3s ease;
     transform: translateX(-50%);
 }
@@ -89,37 +89,20 @@ nav a:hover {
 .dropdown-menu {
     background-color: rgba(255, 255, 255, 0.95);
     border-radius: 8px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(228, 87, 202, 0.1);
     padding: 8px 0;
 }
 
 .dropdown-item {
     padding: 10px 20px;
     transition: all 0.3s ease;
-    color: #333;
+    color: #E457CA;
 }
 
 .dropdown-item:hover {
-    background-color: #888686;
+    background-color: rgba(228, 87, 202, 0.35);
     color: #fff;
     transform: translateX(5px);
-}
-
-#navbar {
-    background-color: transparent;
-    transition: background-color 0.3s ease;
-}
-
-#navbar.bg-white {
-    background-color: rgba(255, 255, 255, 0.9) !important;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-footer a:hover {
-    color: #ff6347;
-    text-decoration: underline;
-    background-color: #333;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #glass_panoramico{
