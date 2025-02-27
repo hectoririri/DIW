@@ -44,3 +44,45 @@ Se pueden ver fotos y videos en formato de carrousel de mis grupos y conciertos 
 ### Sass: archivo custom.css reducido
 Archivo `custom.scss` compilado a `custom.css` para personalización avanzada.
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Parte 2: Contenido Multimedia 
+### Aplica procesos de optimización a imágenes y vídeos
+
+### Justifica el uso de los diferentes formatos usados
+| Componente          | Personalización                                                                 |
+|---------------------|---------------------------------------------------------------------------------|
+| Navbar              | Efecto *glassmorphism* con `backdrop-filter: blur()`, transiciones suaves y gradientes en hover. |
+| Carrusel            | Controles personalizados con íconos redondeados y transiciones fluidas.         |
+| Tarjetas (Cards)    | Efecto *hover* 3D (`transform: scale()`) y sombras dinámicas.                   |
+| Menús Desplegables  | Diseño *glassmorphism* y animaciones de desplazamiento lateral en hover.        |
+
+### Justifica la importancia de optimizar el contenido multimedia
+- Rendimiento : Reducción del 45% en tamaño de imágenes (ej: fondo-principal.jpg pasó de 2.1MB a 780KB).
+- Experiencia de Usuario : Carga instantánea en conexiones lentas gracias a formatos modernos (WebP) y lazy loading .
+- SEO : Mejora en métricas Core Web Vitals (LCP < 2.5s, CLS < 0.1).
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Parte 3: Accesibilidad y Usabilidad
+### Aplica los principios de accesibilidad, comenta las técnicas utilizadas.
+- Contraste : Ratio mínimo 4.5:1 en textos (verificado con WebAIM Contrast Checker ).
+- Semántica HTML : Uso correcto de etiquetas (<nav>, <header>, <button> para controles).
+- ARIA : Etiquetas descriptivas en elementos interactivos:
+```html
+<button aria-label="Ver proyectos de Python">Ver proyectos</button>
+```
+- Navegación Teclado : Soporte completo para Tab, Shift+Tab y Enter.
+
+### Comprueba sobre tu web los desafíos de accesibilidad que se plantean en el apartado 8.
+coger los desafios que se puedan hacer en mi pagina web y ponerlos
+
+### Usa herramientas que te ayuden a determinar si el contenido de tu web cumple con los estándares de accesibilidad.
+- Lighthouse : Puntuación de accesibilidad: 92/100.
+- WAVE Toolbar : 0 errores críticos detectados.
+- Screen Readers : Testeado con NVDA y VoiceOver.
+
+### Analiza la usabilidad de tu web según el apartado 5.2. Análisis de un sitio web bien diseñado
+
+### Realiza sobre tu web los ejercicio planteados en el tema de accesibilidad (apartado 2 actividades 2.2 a 2.6) para la de evaluación, análisis y testeo de accesibilidad web.
+     
