@@ -1,11 +1,9 @@
 # Proyecto HNG - Portafolio Personal con Bootstrap
 
-![Portada del Proyecto](ruta/a/imagen-portada.jpg) <!-- Añadir ruta real si es necesario -->
+![imagen](https://github.com/user-attachments/assets/9a14498d-4feb-4938-98b5-3034755fcbef)
 
 ## Descripción del Proyecto
 Portafolio web moderno y responsivo desarrollado con **HTML, CSS y Bootstrap**, enfocado en mostrar proyectos musicales y de desarrollo. Combina un diseño visual atractivo con funcionalidades interactivas, optimización multimedia y buenas prácticas de accesibilidad.
-
----
 
 ## Parte 1: Web Personalizada
 
@@ -15,8 +13,43 @@ Se pueden ver fotos y videos en formato de carrousel de mis grupos y conciertos 
 
 ### Rejilla responsive para diferentes dispositivos.
 - **Rejilla Bootstrap**: Uso de sistema de columnas (`container`, `row`, `col-*`) para adaptación automática a dispositivos móviles, tablets y desktops.
-- **Media Queries Personalizadas**: Ajustes específicos para navegación en móviles (ej: menú hamburguesa con icono SVG personalizado).
-
+- **Tamaños de columnas**: Uso del sistema de medidas de columnas (`xl`, `lg`, `md`) para la disposición de columnas dependiendo de la resolución del dispositivo
+Fila de carrousel con card
+```html
+<!-- Carrousel -->
+<div class="col-12 col-sm-12 col-md-6 col-lg-5 d-flex justify-content-center mb-4 mb-md-0">
+  ...contenido...
+</div>
+<!-- Card derecha musica -->
+<div class="col-12 col-sm-12 col-md-6 col-lg-5 d-flex justify-content-center">
+  ...contenido...
+</div>
+```
+Filas de proyecto y cards
+```html
+<div class="p-5">
+    <div class="row mb-4">
+        <h1 class="text-start pb-2 text-white"><a name="proyectos">Proyectos</h1></a>
+        <div class="col-12">
+        </div>
+    </div>
+    <!-- 4 Cards -->
+    <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-12 col-md-6 col-lg-3 align-content-center">
+        </div>
+        <!-- Cord 2 PHP -->
+        <div class="col-12 col-md-6 col-lg-3 align-content-center">
+        </div>
+        <!-- Card 3 JS-->
+        <div class="col-12 col-md-6 col-lg-3 align-content-center">
+        </div>
+        <!-- Card 4 HTML+CSS-->
+        <div class="col-12 col-md-6 col-lg-3 align-content-center">
+        </div>
+    </div>
+</div>
+```
 ### Diferentes componentes de bootstrap.
 | Componente          | Personalización                                                                 |
 |---------------------|---------------------------------------------------------------------------------|
@@ -24,6 +57,7 @@ Se pueden ver fotos y videos en formato de carrousel de mis grupos y conciertos 
 | Carrusel            | Controles personalizados con íconos redondeados y transiciones fluidas.         |
 | Tarjetas (Cards)    | Efecto *hover* 3D (`transform: scale()`) y sombras dinámicas.                   |
 | Menús Desplegables  | Diseño *glassmorphism* y animaciones de desplazamiento lateral en hover.        |
+Mostrar codigo con esas etiquetas
 
 ### Archivo .css
 - **Tipografía Custom**: Fuente `Neiko-Font` integrada vía `@font-face`.
