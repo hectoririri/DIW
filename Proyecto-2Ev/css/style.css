@@ -1,40 +1,51 @@
+/* Reset básico para todos los elementos */
 * {
     border: 0;
     box-sizing: border-box;
 }
+
+/* Estilos base del body con fondo gris y tipografía personalizada */
 body {
     background: #706c6f;
     font-family: 'MiFuente', sans-serif; /* Usa tu fuente personalizada */
     color: #333;
     font-size: 1.3em;
 }
-/* styles.css */
+
+/* Definición de la fuente personalizada MiFuente */
 @font-face {
     font-family: 'MiFuente'; 
     src: url('../resources/fuentes/Neiko-Font/neikoregular-xgmp2.otf') format('opentype');
     font-weight: normal;
     font-style: normal; 
 }
+
+/* Sección hero con imagen de fondo y efecto de overlay */
 .hero {
     background: url('../resources/img/fondos/fondo-principal.jpg') no-repeat center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: #868686;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+/* Contenedor de la barra de navegación */
 .container-navbar{
     position: relative;
 }
+
+/* Estilizado de los controles del carrusel */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-background-color: rgba(0, 0, 0, 0.5);
-border-radius: 50%;
-padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 20px;
 }
-/* Navbar styling */
+
+/* Barra de navegación con efecto glassmorphism */
 .navbar {
     background: rgba(33, 37, 41, 0.95);
     backdrop-filter: blur(10px);
@@ -42,6 +53,7 @@ padding: 20px;
     transition: all 0.3s ease-in-out;
 }
 
+/* Enlaces de navegación con efectos hover */
 .navbar-nav .nav-link {
     color: #fff;
     font-weight: 500;
@@ -52,6 +64,7 @@ padding: 20px;
     position: relative;
 }
 
+/* Efecto de línea gradiente bajo los enlaces */
 .navbar-nav .nav-link::after {
     content: '';
     position: absolute;
@@ -63,51 +76,71 @@ padding: 20px;
     transition: width 0.3s ease;
 }
 
+/* Animación de la línea al hacer hover */
 .navbar-nav .nav-link:hover::after {
     width: 100%;
 }
 
+/* Cambio de color en hover y estado activo */
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
     color: #5784e4;
 }
 
+/* Menú desplegable con efecto glassmorphism */
 .dropdown-menu {
-    background: rgba(33, 37, 41, 0.95);
+    background: rgba(98, 100, 102, 0.95);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(228, 87, 202, 0.2);
     border-radius: 8px;
 }
 
+/* Elementos del menú desplegable */
 .dropdown-item {
     color: #fff;
     transition: all 0.3s ease;
     padding: 0.7rem 1.5rem;
 }
 
+/* Efectos hover para elementos desplegables */
 .dropdown-item:hover {
-    background: rgba(228, 87, 202, 0.2);
+    background: rgba(187, 174, 185, 0.2);
     color: #5784e4;
     transform: translateX(5px);
+    border-radius: 18px;
+    width: 80%;
 }
 
+/* Tamaño fijo para iconos SVG en el menú */
+.dropdown-item svg {
+    min-width: 20px;
+    min-height: 20px;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+/* Botón del toggler para móvil */
 .navbar-toggler {
     border: none;
     padding: 0.5rem;
 }
 
+/* Eliminación del outline al hacer focus */
 .navbar-toggler:focus {
     box-shadow: none;
     outline: none;
 }
 
+/* Icono personalizado para el toggler */
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(228, 87, 202, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+/* Efecto glassmorphism para elemento panorámico */
+/* https://css.glass */
 #glass_panoramico{
-    /* From https://css.glass */
     background: rgba(228, 87, 202, 0.35);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -115,15 +148,20 @@ padding: 20px;
     -webkit-backdrop-filter: blur(5.5px);
     border: 1px solid rgba(228, 87, 202, 0.61);
 }
+
+/* Ajuste de imágenes en el carrusel */
 .carousel-item img{
     object-fit: cover;
 }
-/* Animación y personalización cards */
+
+/* Estilo base para las tarjetas personalizadas */
 .custom-card {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     border: 1px solid #ddd;
     border-radius: 8px;
 }
+
+/* Efecto hover para las tarjetas */
 .custom-card:hover {
     transform: scale(1.10);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
