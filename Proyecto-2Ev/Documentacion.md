@@ -490,6 +490,7 @@ Por ejemplo, la imagen de la portada, que originalmente pesaba 1.5 MB, fue compr
 
 El video del concierto ha pasado de 18,4 MB a 8,46 MB, lo que supone una reducción del 54%. La calidad tanto de video como de audio sigue siendo la misma que la original, por lo que no se pierde calidad en el proceso.
 
+![imagen](https://github.com/user-attachments/assets/1ccbee40-26f0-4bb8-92df-bddaa0f25205)
 
 
 
