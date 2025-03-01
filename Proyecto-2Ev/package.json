@@ -6,7 +6,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "purgecss": "^7.0.2"
+  },
   "scripts": {
     "build": "purgecss --css sass/custom.css --content index.html --output sass/reducido.css"
   },

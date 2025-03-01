@@ -313,7 +313,61 @@ Carrousel de imágenes:
   ```
 
 ### Sass: archivo custom.css reducido
-Archivo `custom.scss` compilado a `custom.css` para personalización avanzada.
+He modificado mi archivo custom.scss añadiendo nuevos colores para Bootstrap, espacios personalizados, medidas de contenedores, personalización de fuente de texto, etc... Mi archivo custom.scss es el siguiente:
+```scss
+// Colores personalizados
+$primary: #1a1a1b;
+$secondary: #6c757d;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+
+// Espacios de relleno personalizados
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4
+);
+
+// Medidas máximas para los contenedores bootstrap
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+// Configuración de fuente personalizada
+$font-family-sans-serif: 'Segoe UI', system-ui, -apple-system, sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.6;
+
+// Radio de bordes personalizado
+$border-radius: .400rem;
+$border-radius-lg: .6rem;
+$border-radius-sm: .20rem;
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+```
+Con el comando  `npm run build` he compilado mi archivo y lo he llamado `reducido.css`. Al compilarlo lo moví a la carpeta `css` y lo he enlazado en mi archivo `index.html` de la siguiente manera:
+```html
+    <!-- Sin scss <link rel="stylesheet" href="./css/bootstrap.min.css" /> -->
+    <!-- Sin scss <link rel="stylesheet" href="./css/style.css"> -->
+    <!-- Sin scss <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+    <!-- Con scss --> <link rel="stylesheet" href="./css/reducido.css"> 
+```
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -498,7 +552,7 @@ Para el video, he usado el formato mp4, ya que es el formato más utilizado en l
 Para las fotos he usado el formato **jpg, png, y svg**.
 - **jpg:** He usado este formato ya que es un formato para imágenes con 24 bits de profundidad de color. Esto me ha permitido sacar más provecho de los colores y detalles de las imágenes con más luces, ya que el formato jpg es capaz de almacenar una gran cantidad de información. También permite comprimir imágenes sin perder calidad, lo que me ha permitido reducir el tamaño estas.
 - **png:** He usado este formato para imágenes con menos colores y detalles. Además, es un formato que permite imágenes con transparencia, lo que me ha permitido crear imágenes con transparencia como la del logo de HTML y CSS.
-- **svg:** He usado este formato mayormente para logos, ya que es un formato vectorial que permite crear imágenes con líneas y formas. Esto permite que al escalar la imagen, no pierda calidad.
+- **svg:** He usado este formato mayormente para logos, ya que es un formato vectorial que permite crear imágenes con líneas y formas. Esto permite que al escalar la imagen, no pierda calidad.*web [svgviewer](https://www.svgviewer.dev/) donde he personalizado y usado los svg.*
 
 ### Justifica la importancia de optimizar el contenido multimedia
 Optimizar el contenido multimedia es importante por varias razones:
