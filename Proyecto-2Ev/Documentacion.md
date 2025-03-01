@@ -486,6 +486,11 @@ Para las animaciones, utilicé las propias integradas que ofrece Bootstrap para 
 ### Aplica procesos de optimización a imágenes y vídeos
 Para optimizar el tamaño de las imágenes y vídeos, utilicé comprimidores de imágenes y vídeos online, como [**Veed**](https://www.veed.io/es-ES/herramientas/comprimir-video/comprimir-mp4) y [**iloveimg**](https://www.iloveimg.com/es/comprimir-imagen/). Estos comprimidores reducen el tamaño de las imágenes y vídeos sin afectar su calidad.
 
+Por ejemplo, la imagen de la portada, que originalmente pesaba 1.5 MB, fue comprimida a 1.1 MB, reduciendo su tamaño en un 27%. Aunque sea 27%, sigue siendo una reducción significativa, ya que el tamaño de la imagen es bastante grande.
+
+El video del concierto ha pasado de 18,4 MB a 8,46 MB, lo que supone una reducción del 54%. La calidad tanto de video como de audio sigue siendo la misma que la original, por lo que no se pierde calidad en el proceso.
+
+
 
 
 ### Justifica el uso de los diferentes formatos usados
