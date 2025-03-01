@@ -492,20 +492,18 @@ El video del concierto ha pasado de 18,4 MB a 8,46 MB, lo que supone una reducci
 
 ![imagen](https://github.com/user-attachments/assets/1ccbee40-26f0-4bb8-92df-bddaa0f25205)
 
-
-
 ### Justifica el uso de los diferentes formatos usados
-jpg, mp4 etc
+Para el video, he usado el formato mp4, ya que es el formato más utilizado en la web. Además, es compatible con la mayoría de los navegadores y es un formato que ofrece una buena calidad de video y audio. Además, es un formato que se puede comprimir sin perder calidad. Así he podido aprovechar para reducir el tamaño del video al ver que ocupaba bastante.
 
-| Componente          | Personalización                                                                 |
-|---------------------|---------------------------------------------------------------------------------|
-| Navbar              | Efecto *glassmorphism* con `backdrop-filter: blur()`, transiciones suaves y gradientes en hover. |
-| Carrusel            | Controles personalizados con íconos redondeados y transiciones fluidas.         |
-| Tarjetas (Cards)    | Efecto *hover* 3D (`transform: scale()`) y sombras dinámicas.                   |
-| Menús Desplegables  | Diseño *glassmorphism* y animaciones de desplazamiento lateral en hover.        |
+Para las fotos he usado el formato **jpg, png, y svg**.
+- **jpg:** He usado este formato ya que es un formato para imágenes con 24 bits de profundidad de color. Esto me ha permitido sacar más provecho de los colores y detalles de las imágenes con más luces, ya que el formato jpg es capaz de almacenar una gran cantidad de información. También permite comprimir imágenes sin perder calidad, lo que me ha permitido reducir el tamaño estas.
+- **png:** He usado este formato para imágenes con menos colores y detalles. Además, es un formato que permite imágenes con transparencia, lo que me ha permitido crear imágenes con transparencia como la del logo de HTML y CSS.
+- **svg:** He usado este formato mayormente para logos, ya que es un formato vectorial que permite crear imágenes con líneas y formas. Esto permite que al escalar la imagen, no pierda calidad.
 
 ### Justifica la importancia de optimizar el contenido multimedia
-- Rendimiento : Reducción del 45% en tamaño de imágenes (ej: fondo-principal.jpg pasó de 2.1MB a 780KB).
+Optimizar el contenido multimedia es importante por varias razones:
+- Ahorro de espacio : Al reducir el tamaño de las imágenes y vídeos, se reduce el espacio que ocupan en el servidor, lo que permite tener más espacio para otros archivos.
+- Rendimiento : Reducción del 97% en tamaño de imágenes (ej: fondo-principal.jpg pasó de 2.1MB a 61KB).
 - Experiencia de Usuario : Carga instantánea en conexiones lentas gracias a formatos modernos y archivos con tamaño reducido.
 - SEO : Mejora en métricas Core Web Vitals (LCP < 2.5s, CLS < 0.1).
 
