@@ -344,8 +344,8 @@ He utilizado un favicon personalizado creado a partir del logo de mi portfolio. 
 - Carrusel personalizado:
 El carrusel implementado es un componente de Bootstrap que muestra una presentación dinámica de imágenes de diferentes grupos musicales. Sus características principales son:
 
-- - Estructura básica usando las clases `carousel slide` de Bootstrap
-- - Botones de navegación prev/next con iconos de flechas
+  - Estructura básica usando las clases `carousel slide` de Bootstrap
+  - Botones de navegación prev/next con iconos de flechas
 ```html
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -356,7 +356,7 @@ El carrusel implementado es un componente de Bootstrap que muestra una presentac
     <span class="visually-hidden">Next</span>
   </button>
 ```
-- - Indicadores de posición con clase `carousel-indicators`. En estos indicadores, cada botón representa un slide del carrusel. Los atributos `data-bs-target` y `data-bs-slide-to` se utilizan para enlazar los botones con el carrusel correspondiente.
+  - Indicadores de posición con clase `carousel-indicators`. En estos indicadores, cada botón representa un slide del carrusel. Los atributos `data-bs-target` y `data-bs-slide-to` se utilizan para enlazar los botones con el carrusel correspondiente.
 ```html
 <div class="carousel-indicators">
   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -365,10 +365,10 @@ El carrusel implementado es un componente de Bootstrap que muestra una presentac
   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
 </div>
 ```
-- -  4 slides con imágenes de grupos musicales diferentes. Cada slide está dentro de una etiqueta `carrousel-inner rounded h-100` que contiene
-  - Una imagen optimizada con clase `d-block w-100 h-100`
-  - Un título y subtítulo en un `carrousel-caption`
-  - Atributo `alt` descriptivo para accesibilidad
+  -  4 slides con imágenes de grupos musicales diferentes. Cada slide está dentro de una etiqueta `carrousel-inner rounded h-100` que contiene
+    - Una imagen optimizada con clase `d-block w-100 h-100`
+    - Un título y subtítulo en un `carrousel-caption`
+    - Atributo `alt` descriptivo para accesibilidad
   ```html
   <div class="carousel-item active h-100">
     <img src="./resources/img/grupos/Eiden_VenAlParque.jpg" class="d-block w-100 h-100" alt="Foto grupal con Eiden" style="object-fit: cover; height: 400px !important;">
@@ -433,12 +433,64 @@ El carrusel está estructurado en un sistema de columnas Bootstrap para asegurar
   ```
 - Animación:
 Para las animaciones, utilicé las propias integradas que ofrece Bootstrap para crear efectos de transición suave, además de las mias propias que utilizo en mi hoja de estilo `style.css`.
+  - Animaciones con Bootstrap:
+    - Estas son las animaciones que vienen por defecto al crear un modal, carrousel, etc...
 
-- Reproductores:
+  - Animaciones propias `style.css`:
+    - Animación hover para agrandar una card:
+    ```css
+          .custom-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+          }
+          .custom-card:hover {
+            transform: scale(1.10);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+          }
+    ```
+    - Animación hover a los items del dropdown menu de la barra de navegación:
+    ```css
+          .dropdown-item {
+            transition: all 0.3s ease;
+          }
+
+          .dropdown-item:hover {
+              transform: translateX(15px);
+              border-radius: 18px;
+              width: 80%;
+          }
+    ```
+    - Animación hover a los enlaces de la barra de navegación:
+    ```css
+      .navbar-nav .nav-link {
+          color: #fff;
+          font-weight: 500;
+          padding: 0.5rem 1rem;
+          margin: 0 0.2rem;
+          border-radius: 5px;
+          transition: all 0.3s ease;
+          position: relative;
+      }
+
+      .navbar-nav .nav-link::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background: linear-gradient(90deg, #E457CA, #0dcaf0);
+          transition: width 0.3s ease;
+      }
+    ```
 
 ### Aplica procesos de optimización a imágenes y vídeos
+Para optimizar el tamaño de las imágenes y vídeos, utilicé comprimidores de imágenes y vídeos online, como [**Veed**](https://www.veed.io/es-ES/herramientas/comprimir-video/comprimir-mp4) y [**iloveimg**](https://www.iloveimg.com/es/comprimir-imagen/). Estos comprimidores reducen el tamaño de las imágenes y vídeos sin afectar su calidad.
+
+
 
 ### Justifica el uso de los diferentes formatos usados
+jpg, mp4 etc
+
 | Componente          | Personalización                                                                 |
 |---------------------|---------------------------------------------------------------------------------|
 | Navbar              | Efecto *glassmorphism* con `backdrop-filter: blur()`, transiciones suaves y gradientes en hover. |

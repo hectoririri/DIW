@@ -107,7 +107,7 @@ body {
 .dropdown-item:hover {
     background: rgba(187, 174, 185, 0.2);
     color: #5784e4;
-    transform: translateX(5px);
+    transform: translateX(15px);
     border-radius: 18px;
     width: 80%;
 }
