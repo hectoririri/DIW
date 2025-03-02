@@ -574,7 +574,27 @@ Optimizar el contenido multimedia es importante por varias razones:
 - Navegación Teclado : Soporte completo para Tab, Shift+Tab y Enter.
 
 ### Comprueba sobre tu web los desafíos de accesibilidad que se plantean en el apartado 8.
-coger los desafios que se puedan hacer en mi pagina web y ponerlos
+Sobre mi web, comprobaré los desafios que pueda aplicar ya que hay ciertos que no puedo por no tener documentación en mi web para ello o se me hace imposible. Por ejemplo, el desafío 2 requiere de poner subtítulos en tu video, y el mio solo es sonido de un concierto de música.
+- Desafío 1: Contraste de colores
+He comprobado los dos colores de texto y fondo que más utilizo en mi web para demostrar que paso la prueba. En la página [webaim.org](https://webaim.org/resources/contrastchecker/) podemos comprobar si nuestros colores pasan la prueba:
+1![imagen](https://github.com/user-attachments/assets/19847716-30bf-4a75-b98e-8bb6919e08a7)
+1![imagen](https://github.com/user-attachments/assets/ff2b1005-0bd5-40b1-b571-14d115af16b3)
+
+2![imagen](https://github.com/user-attachments/assets/36c761bf-969a-4ec8-b599-52d3b68ad11c)
+2![imagen](https://github.com/user-attachments/assets/3ef1991e-4f72-48da-8324-5daa6a45b4a5)
+
+3![imagen](https://github.com/user-attachments/assets/dbc86ac3-0e32-4e2a-b902-2c61169fa4cd)
+3![imagen](https://github.com/user-attachments/assets/f7967823-fca3-4244-94f3-7273875701b0)
+
+- Desafío 4: Idioma
+En todos los enlaces de mi proyecto y etiqueta `<html>` he especificado el idioma en el que se encuentra, que en mi caso es `es`. En los enlaces `<a>` y etiqueta `<html>`, con el atributo `lang`, y para indicar la dirección de los enlaces se hace con el atributo `hreflang`:
+![imagen](https://github.com/user-attachments/assets/14dee55b-69cd-4f9a-a0ac-303a6574b5af)
+
+- Desafío 5: Texto alternativo en las imágenes
+En todas mis etiquetas `<img>` he incluido el atributo `alt` que me permite indicar un texto alternativo para estas imágenes en caso de que no se encuentren disponibles o una persona que lea la página sin verla pueda saber de qué trata la foto:
+![imagen](https://github.com/user-attachments/assets/a86a8e15-1f1c-4dc7-8f8c-8fa749fa26d1)
+
+- 
 
 ### Realiza sobre tu web los ejercicio planteados en el tema de accesibilidad (apartado 2 actividades 2.2 a 2.6) para la de evaluación, análisis y testeo de accesibilidad web.
 
