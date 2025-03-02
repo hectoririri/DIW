@@ -628,7 +628,20 @@ En todos los enlaces de mi proyecto y etiqueta `<html>` he especificado el idiom
 En todas mis etiquetas `<img>` he incluido el atributo `alt` que me permite indicar un texto alternativo para estas imágenes en caso de que no se encuentren disponibles o una persona que lea la página sin verla pueda saber de qué trata la foto:
 ![imagen](https://github.com/user-attachments/assets/a86a8e15-1f1c-4dc7-8f8c-8fa749fa26d1)
 
-- 
+- Desafío 9: Web maquetada mediante tablas
+Mi web está estructurada mediante las nuevas etiquetas de HTML5, que son `header`, `nav`, `main` y `footer`.
+![imagen](https://github.com/user-attachments/assets/57c8f90f-4286-4171-9b9a-f7edcf5ee706)
+
+- Desafío 11: Atributo acceskey
+Este atributo se utliliza para definir un atajo de teclado, es decir, una tecla de acceso directo a un elemento como un botón, un formulario o un enlace. Siguiendo los atajos definidos por el Gobierno del Reino Unido en 2002, solo he podido aplicar los siguientes a mi sitio web:
+1 – Home page
+![imagen](https://github.com/user-attachments/assets/bfca8623-9a3f-4de1-bea8-78af7f93c364)
+2 – What’s new
+![imagen](https://github.com/user-attachments/assets/fb11adde-e9f7-40f1-a538-a22509730e44)
+
+- Desafío 12: Atributo tabindex
+Para este atributo no me ha hecho falta usarlo ya que no se recomienda modificarlo para mantener el orden predeterminado de la página. En mi caso no tengo ningún elemento interactivo del que se necesite el tabulador para acceder, por lo tanto lo he dejado por predeterminado.
+
 
 ### Realiza sobre tu web los ejercicio planteados en el tema de accesibilidad (apartado 2 actividades 2.2 a 2.6) para la de evaluación, análisis y testeo de accesibilidad web.
 
