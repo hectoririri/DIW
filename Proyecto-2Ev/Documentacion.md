@@ -646,9 +646,72 @@ Para este atributo no me ha hecho falta usarlo ya que no se recomienda modificar
 ### Realiza sobre tu web los ejercicio planteados en el tema de accesibilidad (apartado 2 actividades 2.2 a 2.6) para la de evaluación, análisis y testeo de accesibilidad web.
 
 ### Usa herramientas que te ayuden a determinar si el contenido de tu web cumple con los estándares de accesibilidad.
-- Lighthouse : Puntuación de accesibilidad: 92/100.
-- WAVE Toolbar : 0 errores críticos detectados.
-- Screen Readers : Testeado con NVDA y VoiceOver.
+He encontrado las siguientes herramientas con la que he testeado mi sitio web para ver si cumple los estándares de accesibilidad:
+- [acchecks.org](https://achecks.org/checker/index.php)
+Esta página analiza tu archivo HTML y lo comprueba basándose en los estándares que quiere que use. En mi caso escogí los siguientes:
+1/2![imagen](https://github.com/user-attachments/assets/5d8a7038-b7d1-41bb-be92-720237a79771)
+2/2![imagen](https://github.com/user-attachments/assets/6bf9c803-bebe-4662-844c-e2b0a7804d3c)
+
+- [mauve.isti.cnr.it](https://mauve.isti.cnr.it/singleValidation.jsp)
+Esta página hace lo mismo que la anterior pero te lo informa de mejor manera. Te muestra el número de fallos y el grado de estos, porcentaje de accesibilidad, líneas del código donde ocurren estos fallos, etc...
+1/2![imagen](https://github.com/user-attachments/assets/27f4caa5-b913-473f-94cf-7feffc17f14f)
+2/2![imagen](https://github.com/user-attachments/assets/b4e623c9-44de-447e-a015-c17bc996a810)
 
 ### Analiza la usabilidad de tu web según el apartado 5.2. Análisis de un sitio web bien diseñado
+Siguiendo el siguiente [apartado 5.2](https://www.eniun.com/tutorial-usabilidad-web/#5_Estudio_de_casos_de_mejora_y_analisis_de_usabilidad) he verificado cada punto y comprobado si mi sitio web lo cumple o no. Este es el resultado:
+
+- 1. Visibilidad del estado del sistema ✅
+- - Your site has a fixed navigation bar ( navbar-expand-lg fixed-top )
+- - Active section is highlighted in the navigation
+- - Visual feedback through hover effects on interactive elements
+```html
+<a class="nav-link active" aria-current="page" href="#" accesskey="1"> Inicio </a>
+```
+- 2. Coincidencia entre el sistema y el mundo real ✅
+- - Clear language used throughout
+- - Intuitive section names ("Proyectos", "Música")
+- - Logical navigation structure from header to projects
+- - Familiar icons for social media
+- 3. Control y libertad del usuario ✅
+- - Easy navigation through navbar
+- - Clear "Cerrar" buttons in modals
+- - Multiple navigation paths to same content
+```html
+<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Cerrar modal de video">Cerrar</button>
+ ```
+
+- 4. Consistencia y estándares ✅
+- - Consistent color scheme using Bootstrap variables
+- - Uniform card design across projects
+- - Consistent button styles and interactions
+- - Standard navigation patterns
+- 5. Prevención de errores ⚠️
+   Suggestion for improvement:
+- - Add form validation
+- - Include confirmation dialogs for important actions
+- - Add tooltips for complex interactions
+- 6. Reconocimiento en lugar de recuerdo ✅
+- - Clear navigation always visible
+- - Descriptive button labels
+- - Visual icons accompanying text
+- - Clear section headings
+- 7. Flexibilidad y eficiencia de uso ✅
+- - Keyboard shortcuts (accesskey attributes)
+- - Responsive design for different devices
+- - Multiple ways to access content (buttons, links)
+- 8. Diseño estético y minimalista ✅
+- - Clean card-based layout
+- - Consistent spacing using Bootstrap classes
+- - Focus on important content
+- - Good use of white space
+- 9. Ayuda y documentación ❌
+   Suggestion for improvement:
+- - Add a help section
+- - Include tooltips for complex features
+- - Add a contact form or FAQ section
+- 10. Prevención de problemas ⚠️
+    Suggestion for improvement:
+- - Add loading states for dynamic content
+- - Include error handling messages
+- - Add fallback content for failed media loading
      
