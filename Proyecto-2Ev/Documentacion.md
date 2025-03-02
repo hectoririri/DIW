@@ -486,7 +486,7 @@ El carrusel está estructurado en un sistema de columnas Bootstrap para asegurar
       </div>
   ```
 - Animación:
-Para las animaciones, utilicé las propias integradas que ofrece Bootstrap para crear efectos de transición suave, además de las mias propias que utilizo en mi hoja de estilo `style.css`.
+Para las animaciones, utilicé las propias integradas que ofrece Bootstrap para crear efectos de transición suave, además de las mias propias que utilizo en mi hoja de estilo `style.css` y una utilizada usando Javascript.
   - Animaciones con Bootstrap:
     - Estas son las animaciones que vienen por defecto al crear un modal, carrousel, etc...
 
@@ -536,6 +536,40 @@ Para las animaciones, utilicé las propias integradas que ofrece Bootstrap para 
           transition: width 0.3s ease;
       }
     ```
+  - Animación con Javascript:
+    - Esta animación hace aparecer el navbar cuando llegas a cierto punto de la página. Cuando aparece lo hace con una animación fade-in y desaparece con una fade-out:
+    ```javascript
+    // Esconde la barra de navegación al cargar la página
+    document.addEventListener('DOMContentLoaded', function() {
+      const navbar = document.getElementById('navbar');
+      navbar.style.display = 'none';
+      navbar.style.opacity = '0';
+    });
+
+    // Muestra la barra de navegación al hacer scroll hasta cierto punto
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      
+      if (window.scrollY > 600) {
+        navbar.style.opacity = '0';
+        navbar.style.display = 'block';
+        navbar.classList.add('navbar-transition');
+        // Retraso para la animación de transparencia
+        setTimeout(() => {
+          navbar.style.opacity = '1';
+          navbar.style.transition = 'opacity 0.3s ease-in';
+        }, 50);
+      } else {
+        // Retraso para fade out
+        navbar.style.opacity = '0';
+        navbar.style.transition = 'opacity 0.3s ease-out';
+        setTimeout(() => {
+          navbar.style.display = 'none';
+          navbar.classList.remove('navbar-transition');
+        }, 300);
+      }
+    });
+    ```
 
 ### Aplica procesos de optimización a imágenes y vídeos
 Para optimizar el tamaño de las imágenes y vídeos, utilicé comprimidores de imágenes y vídeos online, como [**Veed**](https://www.veed.io/es-ES/herramientas/comprimir-video/comprimir-mp4) y [**iloveimg**](https://www.iloveimg.com/es/comprimir-imagen/). Estos comprimidores reducen el tamaño de las imágenes y vídeos sin afectar su calidad.
@@ -574,14 +608,110 @@ Optimizar el contenido multimedia es importante por varias razones:
 - Navegación Teclado : Soporte completo para Tab, Shift+Tab y Enter.
 
 ### Comprueba sobre tu web los desafíos de accesibilidad que se plantean en el apartado 8.
-coger los desafios que se puedan hacer en mi pagina web y ponerlos
+Sobre mi web, comprobaré los desafios que pueda aplicar ya que hay ciertos que no puedo por no tener documentación en mi web para ello o se me hace imposible. Por ejemplo, el desafío 2 requiere de poner subtítulos en tu video, y el mio solo es sonido de un concierto de música.
+- Desafío 1: Contraste de colores
+He comprobado los dos colores de texto y fondo que más utilizo en mi web para demostrar que paso la prueba. En la página [webaim.org](https://webaim.org/resources/contrastchecker/) podemos comprobar si nuestros colores pasan la prueba:
+1![imagen](https://github.com/user-attachments/assets/19847716-30bf-4a75-b98e-8bb6919e08a7)
+1![imagen](https://github.com/user-attachments/assets/ff2b1005-0bd5-40b1-b571-14d115af16b3)
+
+2![imagen](https://github.com/user-attachments/assets/36c761bf-969a-4ec8-b599-52d3b68ad11c)
+2![imagen](https://github.com/user-attachments/assets/3ef1991e-4f72-48da-8324-5daa6a45b4a5)
+
+3![imagen](https://github.com/user-attachments/assets/dbc86ac3-0e32-4e2a-b902-2c61169fa4cd)
+3![imagen](https://github.com/user-attachments/assets/f7967823-fca3-4244-94f3-7273875701b0)
+
+- Desafío 4: Idioma
+En todos los enlaces de mi proyecto y etiqueta `<html>` he especificado el idioma en el que se encuentra, que en mi caso es `es`. En los enlaces `<a>` y etiqueta `<html>`, con el atributo `lang`, y para indicar la dirección de los enlaces se hace con el atributo `hreflang`:
+![imagen](https://github.com/user-attachments/assets/14dee55b-69cd-4f9a-a0ac-303a6574b5af)
+
+- Desafío 5: Texto alternativo en las imágenes
+En todas mis etiquetas `<img>` he incluido el atributo `alt` que me permite indicar un texto alternativo para estas imágenes en caso de que no se encuentren disponibles o una persona que lea la página sin verla pueda saber de qué trata la foto:
+![imagen](https://github.com/user-attachments/assets/a86a8e15-1f1c-4dc7-8f8c-8fa749fa26d1)
+
+- Desafío 9: Web maquetada mediante tablas
+Mi web está estructurada mediante las nuevas etiquetas de HTML5, que son `header`, `nav`, `main` y `footer`.
+![imagen](https://github.com/user-attachments/assets/57c8f90f-4286-4171-9b9a-f7edcf5ee706)
+
+- Desafío 11: Atributo acceskey
+Este atributo se utliliza para definir un atajo de teclado, es decir, una tecla de acceso directo a un elemento como un botón, un formulario o un enlace. Siguiendo los atajos definidos por el Gobierno del Reino Unido en 2002, solo he podido aplicar los siguientes a mi sitio web:
+1 – Home page
+![imagen](https://github.com/user-attachments/assets/bfca8623-9a3f-4de1-bea8-78af7f93c364)
+2 – What’s new
+![imagen](https://github.com/user-attachments/assets/fb11adde-e9f7-40f1-a538-a22509730e44)
+
+- Desafío 12: Atributo tabindex
+Para este atributo no me ha hecho falta usarlo ya que no se recomienda modificarlo para mantener el orden predeterminado de la página. En mi caso no tengo ningún elemento interactivo del que se necesite el tabulador para acceder, por lo tanto lo he dejado por predeterminado.
+
 
 ### Realiza sobre tu web los ejercicio planteados en el tema de accesibilidad (apartado 2 actividades 2.2 a 2.6) para la de evaluación, análisis y testeo de accesibilidad web.
 
 ### Usa herramientas que te ayuden a determinar si el contenido de tu web cumple con los estándares de accesibilidad.
-- Lighthouse : Puntuación de accesibilidad: 92/100.
-- WAVE Toolbar : 0 errores críticos detectados.
-- Screen Readers : Testeado con NVDA y VoiceOver.
+He encontrado las siguientes herramientas con la que he testeado mi sitio web para ver si cumple los estándares de accesibilidad:
+- [acchecks.org](https://achecks.org/checker/index.php)
+Esta página analiza tu archivo HTML y lo comprueba basándose en los estándares que quiere que use. En mi caso escogí los siguientes:
+1/2![imagen](https://github.com/user-attachments/assets/5d8a7038-b7d1-41bb-be92-720237a79771)
+2/2![imagen](https://github.com/user-attachments/assets/6bf9c803-bebe-4662-844c-e2b0a7804d3c)
+
+- [mauve.isti.cnr.it](https://mauve.isti.cnr.it/singleValidation.jsp)
+Esta página hace lo mismo que la anterior pero te lo informa de mejor manera. Te muestra el número de fallos y el grado de estos, porcentaje de accesibilidad, líneas del código donde ocurren estos fallos, etc...
+1/2![imagen](https://github.com/user-attachments/assets/27f4caa5-b913-473f-94cf-7feffc17f14f)
+2/2![imagen](https://github.com/user-attachments/assets/b4e623c9-44de-447e-a015-c17bc996a810)
 
 ### Analiza la usabilidad de tu web según el apartado 5.2. Análisis de un sitio web bien diseñado
+Siguiendo el siguiente [apartado 5.2](https://www.eniun.com/tutorial-usabilidad-web/#5_Estudio_de_casos_de_mejora_y_analisis_de_usabilidad) he verificado cada punto y comprobado si mi sitio web lo cumple o no. Este es el resultado:
+
+- 1. Visibilidad del estado del sistema ✅
+- - Your site has a fixed navigation bar ( navbar-expand-lg fixed-top )
+- - Active section is highlighted in the navigation
+- - Visual feedback through hover effects on interactive elements
+```html
+<a class="nav-link active" aria-current="page" href="#" accesskey="1"> Inicio </a>
+```
+- 2. Coincidencia entre el sistema y el mundo real ✅
+- - Clear language used throughout
+- - Intuitive section names ("Proyectos", "Música")
+- - Logical navigation structure from header to projects
+- - Familiar icons for social media
+- 3. Control y libertad del usuario ✅
+- - Easy navigation through navbar
+- - Clear "Cerrar" buttons in modals
+- - Multiple navigation paths to same content
+```html
+<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Cerrar modal de video">Cerrar</button>
+ ```
+
+- 4. Consistencia y estándares ✅
+- - Consistent color scheme using Bootstrap variables
+- - Uniform card design across projects
+- - Consistent button styles and interactions
+- - Standard navigation patterns
+- 5. Prevención de errores ⚠️
+   Suggestion for improvement:
+- - Add form validation
+- - Include confirmation dialogs for important actions
+- - Add tooltips for complex interactions
+- 6. Reconocimiento en lugar de recuerdo ✅
+- - Clear navigation always visible
+- - Descriptive button labels
+- - Visual icons accompanying text
+- - Clear section headings
+- 7. Flexibilidad y eficiencia de uso ✅
+- - Keyboard shortcuts (accesskey attributes)
+- - Responsive design for different devices
+- - Multiple ways to access content (buttons, links)
+- 8. Diseño estético y minimalista ✅
+- - Clean card-based layout
+- - Consistent spacing using Bootstrap classes
+- - Focus on important content
+- - Good use of white space
+- 9. Ayuda y documentación ❌
+   Suggestion for improvement:
+- - Add a help section
+- - Include tooltips for complex features
+- - Add a contact form or FAQ section
+- 10. Prevención de problemas ⚠️
+    Suggestion for improvement:
+- - Add loading states for dynamic content
+- - Include error handling messages
+- - Add fallback content for failed media loading
      
