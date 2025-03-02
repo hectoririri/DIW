@@ -559,7 +559,7 @@ Optimizar el contenido multimedia es importante por varias razones:
 - Ahorro de espacio : Al reducir el tamaño de las imágenes y vídeos, se reduce el espacio que ocupan en el servidor, lo que permite tener más espacio para otros archivos.
 - Rendimiento : Reducción del 97% en tamaño de imágenes (ej: fondo-principal.jpg pasó de 2.1MB a 61KB).
 - Experiencia de Usuario : Carga instantánea en conexiones lentas gracias a formatos modernos y archivos con tamaño reducido.
-- SEO : Mejora en métricas Core Web Vitals (LCP < 2.5s, CLS < 0.1).
+- SEO : Mejora en métricas [Core Web Vitals](https://web.dev/articles/vitals) (LCP < 2.5s, CLS < 0.1).
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -576,12 +576,12 @@ Optimizar el contenido multimedia es importante por varias razones:
 ### Comprueba sobre tu web los desafíos de accesibilidad que se plantean en el apartado 8.
 coger los desafios que se puedan hacer en mi pagina web y ponerlos
 
+### Realiza sobre tu web los ejercicio planteados en el tema de accesibilidad (apartado 2 actividades 2.2 a 2.6) para la de evaluación, análisis y testeo de accesibilidad web.
+
 ### Usa herramientas que te ayuden a determinar si el contenido de tu web cumple con los estándares de accesibilidad.
 - Lighthouse : Puntuación de accesibilidad: 92/100.
 - WAVE Toolbar : 0 errores críticos detectados.
 - Screen Readers : Testeado con NVDA y VoiceOver.
 
 ### Analiza la usabilidad de tu web según el apartado 5.2. Análisis de un sitio web bien diseñado
-
-### Realiza sobre tu web los ejercicio planteados en el tema de accesibilidad (apartado 2 actividades 2.2 a 2.6) para la de evaluación, análisis y testeo de accesibilidad web.
      
