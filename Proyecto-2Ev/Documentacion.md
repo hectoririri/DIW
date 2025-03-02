@@ -486,7 +486,7 @@ El carrusel está estructurado en un sistema de columnas Bootstrap para asegurar
       </div>
   ```
 - Animación:
-Para las animaciones, utilicé las propias integradas que ofrece Bootstrap para crear efectos de transición suave, además de las mias propias que utilizo en mi hoja de estilo `style.css`.
+Para las animaciones, utilicé las propias integradas que ofrece Bootstrap para crear efectos de transición suave, además de las mias propias que utilizo en mi hoja de estilo `style.css` y una utilizada usando Javascript.
   - Animaciones con Bootstrap:
     - Estas son las animaciones que vienen por defecto al crear un modal, carrousel, etc...
 
@@ -535,6 +535,40 @@ Para las animaciones, utilicé las propias integradas que ofrece Bootstrap para 
           background: linear-gradient(90deg, #E457CA, #0dcaf0);
           transition: width 0.3s ease;
       }
+    ```
+  - Animación con Javascript:
+    - Esta animación hace aparecer el navbar cuando llegas a cierto punto de la página. Cuando aparece lo hace con una animación fade-in y desaparece con una fade-out:
+    ```javascript
+    // Esconde la barra de navegación al cargar la página
+    document.addEventListener('DOMContentLoaded', function() {
+      const navbar = document.getElementById('navbar');
+      navbar.style.display = 'none';
+      navbar.style.opacity = '0';
+    });
+
+    // Muestra la barra de navegación al hacer scroll hasta cierto punto
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      
+      if (window.scrollY > 600) {
+        navbar.style.opacity = '0';
+        navbar.style.display = 'block';
+        navbar.classList.add('navbar-transition');
+        // Retraso para la animación de transparencia
+        setTimeout(() => {
+          navbar.style.opacity = '1';
+          navbar.style.transition = 'opacity 0.3s ease-in';
+        }, 50);
+      } else {
+        // Retraso para fade out
+        navbar.style.opacity = '0';
+        navbar.style.transition = 'opacity 0.3s ease-out';
+        setTimeout(() => {
+          navbar.style.display = 'none';
+          navbar.classList.remove('navbar-transition');
+        }, 300);
+      }
+    });
     ```
 
 ### Aplica procesos de optimización a imágenes y vídeos
