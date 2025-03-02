@@ -661,57 +661,57 @@ Esta página hace lo mismo que la anterior pero te lo informa de mejor manera. T
 Siguiendo el siguiente [apartado 5.2](https://www.eniun.com/tutorial-usabilidad-web/#5_Estudio_de_casos_de_mejora_y_analisis_de_usabilidad) he verificado cada punto y comprobado si mi sitio web lo cumple o no. Este es el resultado:
 
 - 1. Visibilidad del estado del sistema ✅
-- - Your site has a fixed navigation bar ( navbar-expand-lg fixed-top )
-- - Active section is highlighted in the navigation
-- - Visual feedback through hover effects on interactive elements
+  - La barra de navegación fija en la parte superior indica al usuario dónde se encuentra ( navbar-expand-lg fixed-top )
+  - Retroalimentación visual mediante cambios de color y animaciones al interactuar
 ```html
 <a class="nav-link active" aria-current="page" href="#" accesskey="1"> Inicio </a>
 ```
 - 2. Coincidencia entre el sistema y el mundo real ✅
-- - Clear language used throughout
-- - Intuitive section names ("Proyectos", "Música")
-- - Logical navigation structure from header to projects
-- - Familiar icons for social media
+  - Nombres de secciones claras ("Proyectos", "Música")
+  - Términos familiares para los usuarios
+  - Navegación con estructura lógica
+
 - 3. Control y libertad del usuario ✅
-- - Easy navigation through navbar
-- - Clear "Cerrar" buttons in modals
-- - Multiple navigation paths to same content
+  - Navegación sencilla por la página usando la barra de navegación.
+  - Posibilidad de volver al inicio fácilmente ("Inicio").
+```html
+<a lang="es" hreflang="es" class="nav-link active" aria-current="page" href="#" accesskey="1"> Inicio </a>
+```
+  - Botón "Cerrar" en los modales.
 ```html
 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Cerrar modal de video">Cerrar</button>
- ```
+```
+  - Libertad para explorar diferentes secciones.
 
 - 4. Consistencia y estándares ✅
-- - Consistent color scheme using Bootstrap variables
-- - Uniform card design across projects
-- - Consistent button styles and interactions
-- - Standard navigation patterns
+  - Esquema de color consistente utilizando variables Bootstrap.
+  - Diseño de card constante en todo el proyecto.
+  - Estilos constantes de botones e interacciones.
+  - Patrones de navegación estándar.
+    
 - 5. Prevención de errores ⚠️
-   Suggestion for improvement:
-- - Add form validation
-- - Include confirmation dialogs for important actions
-- - Add tooltips for complex interactions
+  - En mi caso no utilizo formularios, por lo que no puedo contar esta parte.
+
 - 6. Reconocimiento en lugar de recuerdo ✅
-- - Clear navigation always visible
-- - Descriptive button labels
-- - Visual icons accompanying text
-- - Clear section headings
+  - Navegación clara siempre visible.
+  - Botones descriptivos y claros.
+  - Iconos visuales acompañados de texto.
+  - Encabezados de sección claros.
+  
 - 7. Flexibilidad y eficiencia de uso ✅
-- - Keyboard shortcuts (accesskey attributes)
-- - Responsive design for different devices
-- - Multiple ways to access content (buttons, links)
+  - Atajos de teclado (atributos de teclas de acceso).
+  - Diseño responsive para los diferentes dispositivos.
+  - Múltiples maneras de acceder al contenido (botones, links, modales...).
+  
 - 8. Diseño estético y minimalista ✅
-- - Clean card-based layout
-- - Consistent spacing using Bootstrap classes
-- - Focus on important content
-- - Good use of white space
+  - Diseño limpio basado en cards
+  - Espaciado uniforme mediante clases Bootstrap
+  - Enfoque en el contenido importante
+  - Buen uso del espacio en blanco
+  
 - 9. Ayuda y documentación ❌
-   Suggestion for improvement:
-- - Add a help section
-- - Include tooltips for complex features
-- - Add a contact form or FAQ section
-- 10. Prevención de problemas ⚠️
-    Suggestion for improvement:
-- - Add loading states for dynamic content
-- - Include error handling messages
-- - Add fallback content for failed media loading
+  - En mi página web no veo necesario incluir este apartado ya que no ofrezco ningún producto o servicio.
+  
+- 10. Prevención de problemas ❌
+  - En mi caso, no es posible ofrecer herramientas como chats en línea o llamadas inmediatas con las herramientas que estamos usando.
      
