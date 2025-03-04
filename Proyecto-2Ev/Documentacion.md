@@ -1,9 +1,17 @@
+![image](https://github.com/user-attachments/assets/039aa425-713c-41a7-9717-9265aa9ce643)
+
 # Proyecto HNG - Portafolio Personal con Bootstrap
 
 ![imagen](https://github.com/user-attachments/assets/9a14498d-4feb-4938-98b5-3034755fcbef)
 
 ## Descripción del Proyecto
 Portafolio web moderno y responsivo desarrollado con **HTML, CSS y Bootstrap**, enfocado en mostrar proyectos musicales y de desarrollo. Combina un diseño visual atractivo con funcionalidades interactivas, optimización multimedia y buenas prácticas de accesibilidad.
+
+## Apartado Trello
+[Enlace a trello](https://trello.com/invite/b/67a5fe3a7e0b91b694417748/ATTIdf7ae08e17f676f4f65b75006b47dc7fF5CF1B70/proyecto-diw)
+![image](https://github.com/user-attachments/assets/dae28e5d-73db-4842-b60d-8e67ce22e4cf)
+
+
 
 ## Parte 1: Web Personalizada
 
@@ -770,4 +778,9 @@ Siguiendo el siguiente [apartado 5.2](https://www.eniun.com/tutorial-usabilidad-
   
 - 10. Prevención de problemas ❌
   - En mi caso, no es posible ofrecer herramientas como chats en línea o llamadas inmediatas con las herramientas que estamos usando.
-     
+
+# Bibliografía
+[Componentes Bootstrap](https://getbootstrap.com/docs/5.0/customize/components/)
+[Animaciones JavaScript](https://es.javascript.info/js-animation)
+[Cards Bootstrap](https://codersfree.com/courses-status/aprende-bootstrap-5-desde-cero/card-style)
+[Estilos navbar](https://getdevdone.com/blog/our-favorite-navigation-menu-effects.html)
