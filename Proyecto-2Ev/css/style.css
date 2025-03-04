@@ -6,7 +6,7 @@
 
 /* Estilos base del body con fondo gris y tipografía personalizada */
 body {
-    background: #706c6f;
+    background: #585558;
     font-family: 'MiFuente', sans-serif; /* Usa tu fuente personalizada */
     color: #333;
     font-size: 1.3em;
@@ -23,7 +23,7 @@ body {
 /* Sección hero con imagen de fondo y efecto de overlay */
 .hero {
     background: url('../resources/img/fondos/fondo-principal.jpg') no-repeat center/cover;
-    height: 100vh;
+    height: 100vh;  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,7 +107,7 @@ body {
 .dropdown-item:hover {
     background: rgba(187, 174, 185, 0.2);
     color: #5784e4;
-    transform: translateX(5px);
+    transform: translateX(15px);
     border-radius: 18px;
     width: 80%;
 }
@@ -149,18 +149,15 @@ body {
     border: 1px solid rgba(228, 87, 202, 0.61);
 }
 
-/* Ajuste de imágenes en el carrusel */
-.carousel-item img{
-    object-fit: cover;
-}
-
 /* Estilo base para las tarjetas personalizadas */
 .custom-card {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     border: 1px solid #ddd;
     border-radius: 8px;
 }
-
+.custom-card img{
+    object-fit: cover;
+}
 /* Efecto hover para las tarjetas */
 .custom-card:hover {
     transform: scale(1.10);

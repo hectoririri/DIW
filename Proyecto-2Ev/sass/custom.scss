@@ -1,2 +1,45 @@
+// Colores personalizados
 $primary: #1a1a1b;
+$secondary: #6c757d;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+
+// Espacios de relleno personalizados
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4
+);
+
+// Medidas máximas para los contenedores bootstrap
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+// Configuración de fuente personalizada
+$font-family-sans-serif: 'Segoe UI', system-ui, -apple-system, sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.6;
+
+// Radio de bordes personalizado
+$border-radius: .400rem;
+$border-radius-lg: .6rem;
+$border-radius-sm: .20rem;
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";

@@ -6,93 +6,85 @@
     <title>Proyecto HNG</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css">
-     <!-- <link rel="stylesheet" href="./sass/reducido.css"> Activar al terminar -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <link rel="stylesheet" href="./css/reducido.css">  -->
     <link rel="shortcut icon" href="./resources/img/logos/favicon.ico" type="image/x-icon">
-    <!-- https://www.svgviewer.dev/s/489761/twitter -->
 </head>
 <body>
-  <!-- Hero Section -->
-  <section class="hero">
+  <!-- Header -->
+  <header class="hero">
     <div class="container text-center py-5">
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <h1 class="display-4 fw-bold text-white mb-3">Bienvenido a Proyecto HNG</h1>
                 <p class="lead text-dark mb-4 fs-3 text-white">Un portfolio moderno usando Bootstrap</p>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <a href="index.html#proyectos">
+                    <a lang="es" hreflang="es" href="index.html#proyectos">
                       <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3" aria-label="Ver sección de proyectos">Ver Proyectos</button>
                     </a>
-                    <a href="index.html#musica">
+                    <a lang="es" hreflang="es" href="index.html#musica">
                       <button type="button" class="btn btn-light btn-lg px-4 me-sm-3" aria-label="Ver sección de música">Mi musica</button>
                     </a>
                 </div>
             </div>
         </div>
     </div>
-  </section>
-
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
-      <div class="container">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-              <ul class="navbar-nav align-items-center">
-                  <li class="nav-item mx-2">
-                      <a class="nav-link active" aria-current="page" href="#">
-                          Inicio
-                      </a>
-                  </li>
-                  <li class="nav-item mx-2">
-                      <a class="nav-link" href="index.html#musica">
-                          Música
-                      </a>
-                  </li>
-                  <li class="nav-item mx-2">
-                      <a class="nav-link" href="index.html#proyectos">
-                          Proyectos
-                      </a>
-                  </li>
-                  <li class="nav-item dropdown mx-2">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Redes Sociales
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center py-2" href="https://github.com/hectoririri" target="_blank">
-                              <svg fill="#000000" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"/></svg>
-                                <span class="m-1 fs-6">GitHub</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center py-2" href="#">
-                              <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6zm3.519 0L12 11.671 18.481 6H5.52zM20 7.329l-7.341 6.424a1 1 0 0 1-1.318 0L4 7.329V18h16V7.329z" fill="#0D0D0D"/></svg>
-                              <span class="m-1 fs-6">Correo</span>
-                            </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item d-flex align-items-center py-2" href="#">
-                              <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path fill="#000000" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
-                              </svg>
-                              <span class="m-1 fs-6">Instagram</span>
+  </header>
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item mx-2">
+                    <a lang="es" hreflang="es" class="nav-link active" aria-current="page" href="#" accesskey="1"> Inicio </a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a lang="es" hreflang="es" class="nav-link" href="index.html#musica"> Música </a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a lang="es" hreflang="es" class="nav-link" href="index.html#proyectos" accesskey="2"> Proyectos </a>
+                </li>
+                <li class="nav-item dropdown mx-2">
+                    <a lang="es" hreflang="es" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Redes Sociales </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                          <a lang="es" hreflang="es" class="dropdown-item d-flex align-items-center py-2" href="https://github.com/hectoririri" target="_blank">
+                            <svg fill="#000000" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"/></svg>
+                              <span class="m-1 fs-6">GitHub</span>
                           </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center py-2" href="#">
-                              <svg fill="#000000" width="20px" height="20px" viewBox="-2 -4 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" class="jam jam-twitter"><path d='M20 1.907a8.292 8.292 0 0 1-2.356.637A4.07 4.07 0 0 0 19.448.31a8.349 8.349 0 0 1-2.607.98A4.12 4.12 0 0 0 13.846.015c-2.266 0-4.103 1.81-4.103 4.04 0 .316.036.625.106.92A11.708 11.708 0 0 1 1.393.754a3.964 3.964 0 0 0-.554 2.03c0 1.403.724 2.64 1.824 3.363A4.151 4.151 0 0 1 .805 5.64v.05c0 1.958 1.415 3.591 3.29 3.963a4.216 4.216 0 0 1-1.08.141c-.265 0-.522-.025-.773-.075a4.098 4.098 0 0 0 3.832 2.807 8.312 8.312 0 0 1-5.095 1.727c-.332 0-.658-.02-.979-.056a11.727 11.727 0 0 0 6.289 1.818c7.547 0 11.673-6.157 11.673-11.496l-.014-.523A8.126 8.126 0 0 0 20 1.907z' /></svg>
-                              <span class="m-1 fs-6">Twitter</span>
-                            </a>
-                        </li>
-                      </ul>
-                  </li>
-              </ul>
-          </div>
-      </div>
-    </nav>
-
-    <a name="musica"></a>
+                      </li>
+                      <li>
+                          <a lang="es" hreflang="es" class="dropdown-item d-flex align-items-center py-2" href="mailto:hnungar584@g.educaand.es?Subject=Interesado%20en%20Héctor😎">
+                            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6zm3.519 0L12 11.671 18.481 6H5.52zM20 7.329l-7.341 6.424a1 1 0 0 1-1.318 0L4 7.329V18h16V7.329z" fill="#0D0D0D"/></svg>
+                            <span class="m-1 fs-6">Correo</span>
+                          </a>
+                      </li>
+                      <li>
+                        <a lang="es" hreflang="es" class="dropdown-item d-flex align-items-center py-2" href="https://www.instagram.com/elgranujaysusmajaras/">
+                            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#000000" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                            </svg>
+                            <span class="m-1 fs-6">Instagram</span>
+                        </a>
+                      </li>
+                      <li>
+                          <a lang="es" hreflang="es" class="dropdown-item d-flex align-items-center py-2" href="https://x.com/home">
+                            <svg fill="#000000" width="20px" height="20px" viewBox="-2 -4 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" class="jam jam-twitter"><path d='M20 1.907a8.292 8.292 0 0 1-2.356.637A4.07 4.07 0 0 0 19.448.31a8.349 8.349 0 0 1-2.607.98A4.12 4.12 0 0 0 13.846.015c-2.266 0-4.103 1.81-4.103 4.04 0 .316.036.625.106.92A11.708 11.708 0 0 1 1.393.754a3.964 3.964 0 0 0-.554 2.03c0 1.403.724 2.64 1.824 3.363A4.151 4.151 0 0 1 .805 5.64v.05c0 1.958 1.415 3.591 3.29 3.963a4.216 4.216 0 0 1-1.08.141c-.265 0-.522-.025-.773-.075a4.098 4.098 0 0 0 3.832 2.807 8.312 8.312 0 0 1-5.095 1.727c-.332 0-.658-.02-.979-.056a11.727 11.727 0 0 0 6.289 1.818c7.547 0 11.673-6.157 11.673-11.496l-.014-.523A8.126 8.126 0 0 0 20 1.907z' /></svg>
+                            <span class="m-1 fs-6">Twitter</span>
+                          </a>
+                      </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+  <!-- Main -->
+  <main>
+    <a lang="es" hreflang="es" name="musica"></a>
     <div class="p-5" style="background-image: url('./resources/img/fondos/panoramica_hector.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 400px;">
       <div class="row py-5 justify-content-center" id="glass_panoramico">
         <!-- Carrousel -->
@@ -106,41 +98,41 @@
             </div>
               <div class="carousel-inner rounded h-100">
                 <div class="carousel-item active h-100">
-                <img src="./resources/img/grupos/Eiden_VenAlParque.jpg" class="d-block w-100 h-100" alt="Foto grupal con Eiden" style="object-fit: cover;">
-                <div class="carousel-caption">
-                <h5>Eiden</h5>
-                <p>2020 - 2021</p>
-                </div>
-                </div>
-                <div class="carousel-item h-100">
-                <img src="./resources/img/grupos/Comborock.jpg" class="d-block w-100 h-100" alt="Imagen de comborock" style="object-fit: cover;">
-                <div class="carousel-caption">
-                  <h5>ComboRock</h5>
-                  <p>2021 - 2022</p>
-                </div>
+                  <img src="./resources/img/grupos/Eiden_VenAlParque.jpg" class="d-block w-100 h-100" alt="Foto grupal con Eiden" style="object-fit: cover; height: 400px !important;">
+                  <div class="carousel-caption">
+                    <h5>Eiden</h5>
+                    <p>2020 - 2021</p>
+                  </div>
                 </div>
                 <div class="carousel-item h-100">
-                <img src="./resources/img/grupos/PyS.jpg" class="d-block w-100 h-100" alt="Foto grupal con Puntos y Seguidos" style="object-fit: cover;">
-                <div class="carousel-caption">
-                  <h5>Puntos y Seguidos</h5>
-                  <p>2024 - ...</p>
+                  <img src="./resources/img/grupos/Comborock.jpg" class="d-block w-100 h-100" alt="Foto grupal de todos los miembros del comborock" style="object-fit: cover; height: 400px !important;">
+                  <div class="carousel-caption">
+                    <h5>ComboRock</h5>
+                    <p>2021 - 2022</p>
+                  </div>
                 </div>
+                  <div class="carousel-item h-100">
+                  <img src="./resources/img/grupos/PyS.jpg" class="d-block w-100 h-100" alt="Foto grupal con Puntos y Seguidos" style="object-fit: cover; height: 400px !important;">
+                  <div class="carousel-caption">
+                    <h5>Puntos y Seguidos</h5>
+                    <p>2024 - actualidad</p>
+                  </div>
                 </div>
                 <div class="carousel-item h-100">
-                <img src="./resources/img/grupos/Granuja_Navidad.jpg" class="d-block w-100 h-100" alt="Foto grupal con El Granuja y sus Majaras." style="object-fit: cover;">
-                <div class="carousel-caption">
-                  <h5>Granuja y sus Majaras</h5>
-                  <p>2024 - ...</p>
-                </div>
+                  <img src="./resources/img/grupos/Granuja_Navidad.jpg" class="d-block w-100 h-100" alt="Foto grupal con El Granuja y sus Majaras." style="object-fit: cover; height: 400px !important;">
+                  <div class="carousel-caption">
+                    <h5>Granuja y sus Majaras</h5>
+                    <p>2024 - actualidad</p>
+                  </div>
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
               </button>
               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
               </button>
           </div>
         </div>
@@ -189,7 +181,7 @@
               <div class="modal-body">
                   <div class="d-flex justify-content-center">
                   <video class="img-fluid w-100" controls autoplay>
-                    <source src="./resources/video/Eiden-VenAlParque-Corto.mp4" type="video/mp4">
+                    <source src="./resources/video/Eiden-VenAlParque-Corto_comprimido.mp4" type="video/mp4">
                     <p>Tu navegador no admite la etiqueta de video</p>
                   </video>
                   </div>
@@ -204,7 +196,7 @@
     <!-- Card Proyectos -->
     <div class="p-5">
         <div class="row mb-4">
-            <h1 class="text-start pb-2 text-white"><a name="proyectos">Proyectos</h1></a>
+            <h1 class="text-start pb-2 text-white"><a lang="es" hreflang="es" name="proyectos">Proyectos</h1></a>
             <div class="col-12">
               <div class="card bg-dark text-light border-0 shadow-lg">
                   <div class="card-body">
@@ -296,7 +288,7 @@
                   </div>
                   <div class="modal-footer border-top border-secondary">
                     <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal" aria-label="Botón para cerrar proyecto de python">Cerrar</button>
-                    <a href="#" class="btn btn-info">Ver Proyectos</a>
+                    <a lang="es" hreflang="es" href="#" class="btn btn-info">Ver Proyectos</a>
                   </div>
                 </div>
               </div>
@@ -374,7 +366,7 @@
                   </div>
                   <div class="modal-footer border-top border-secondary">
                     <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal" aria-label="Botón para cerrar proyecto de PHP">Cerrar</button>
-                    <a href="#" class="btn btn-info">Ver Proyecto</a>
+                    <a lang="es" hreflang="es" href="#" class="btn btn-info">Ver Proyecto</a>
                   </div>
                 </div>
               </div>
@@ -455,7 +447,7 @@
                   </div>
                   <div class="modal-footer border-top border-secondary">
                     <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal" aria-label="Botón para cerrar proyecto de JS">Cerrar</button>
-                    <a href="#" class="btn btn-info">Ver Proyecto</a>
+                    <a lang="es" hreflang="es" href="#" class="btn btn-info">Ver Proyecto</a>
                   </div>
                 </div>
               </div>
@@ -519,7 +511,7 @@
                   <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal" aria-label="Botón para cerrar proyecto de HTML Y CSS">
                     Cerrar
                   </button>
-                  <a href="./resources/proyectos/spotify/index.html" target="_blank" class="btn btn-success">
+                  <a lang="es" hreflang="es" href="./resources/proyectos/spotify/index.html" target="_blank" class="btn btn-success">
                     Ver Imagen
                   </a>
                 </div>
@@ -528,14 +520,14 @@
           </div>
         </div>
     </div>
-
+  </main>
   <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-      <div class="container">
-          <p>&copy; 2025 Proyecto HNG. Todos los derechos reservados.</p>
-          <p>Contacta conmigo sin compromisos</p>
-      </div>
-    </footer>
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <p>&copy; 2025 Proyecto HNG. Todos los derechos reservados.</p>
+        <p>Contacta conmigo sin compromisos</p>
+    </div>
+  </footer>
     <!-- Script de animación navbar -->
   <script>
     // Esconde la barra de navegación al cargar la página
