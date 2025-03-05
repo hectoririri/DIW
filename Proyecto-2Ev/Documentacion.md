@@ -11,7 +11,9 @@ Portafolio web moderno y responsivo desarrollado con **HTML, CSS y Bootstrap**, 
 [Enlace a trello](https://trello.com/invite/b/67a5fe3a7e0b91b694417748/ATTIdf7ae08e17f676f4f65b75006b47dc7fF5CF1B70/proyecto-diw)
 ![image](https://github.com/user-attachments/assets/dae28e5d-73db-4842-b60d-8e67ce22e4cf)
 
-
+# Colores principales
+Esta es la paleta de colores que usaré en mi página web, ya sea como colores primarios, secundarios, de efectos, etc...
+![image](https://github.com/user-attachments/assets/cb446532-9960-489b-b1e7-aa4abe98ee28)
 
 ## Parte 1: Web Personalizada
 
